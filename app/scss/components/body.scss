@@ -1,0 +1,40 @@
+﻿*,
+html,
+body {
+  font-family: "FuturaPT", sans-serif !important;
+  cursor: url(../../images/icon-dot-active.png), auto !important;
+}
+
+strong {
+  font-weight: 700 !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+.sections {
+  width: 100%;
+}
+
+.bg-slider,
+.bg-media {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -7%;
+  bottom: 0;
+  z-index: 0;
+  transition: max-height 0.4s ease;
+  picture {
+    display: block;
+  }
+
+  video,
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

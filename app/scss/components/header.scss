@@ -1,0 +1,68 @@
+﻿.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media screen and (max-width: 1660px) and (max-height: 756px) {
+    padding-top: 15px;
+  }
+
+  &-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    z-index: 100;
+
+    .icon-svg {
+      width: 220px;
+      height: 58px;
+      display: block;
+      img {
+        transition: 0.4s ease;
+      }
+    }
+
+    &:hover {
+      .icon-svg {
+        img {
+          transform: scale(1.05) !important;
+        }
+      }
+    }
+  }
+
+  &-title {
+    position: relative;
+    z-index: 100;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 1.1;
+    color: $color-black;
+    transition: 0.4s ease;
+    text-shadow: -0 -1px 1px #ffffff, 0 -1px 1px #ffffff, -0 1px 1px #ffffff,
+      0 1px 1px #ffffff, -1px -0 1px #ffffff, 1px -0 1px #ffffff,
+      -1px 0 1px #ffffff, 1px 0 1px #ffffff, -1px -1px 1px #ffffff,
+      1px -1px 1px #ffffff, -1px 1px 1px #ffffff, 1px 1px 1px #ffffff,
+      -1px -1px 1px #ffffff, 1px -1px 1px #ffffff, -1px 1px 1px #ffffff,
+      1px 1px 1px #ffffff;
+    span {
+      opacity: 0;
+    }
+
+    &.nav-animation-show {
+      span {
+        animation: nav-animation-show 0.3s linear 0.3s forwards;
+      }
+    }
+
+    @media screen and (max-width: 1660px) and (max-height: 756px) {
+      font-size: 36px;
+    }
+  }
+}

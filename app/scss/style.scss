@@ -1,0 +1,41 @@
+﻿//Bootstrap:
+@import "settings/reset";
+/* purgecss start ignore */
+//settings:
+@import "UI/fonts";
+@import "settings/grid-variable";
+@import "settings/grid";
+@import "settings/colors";
+@import "settings/wrapper";
+//Components:
+@import "components/body";
+@import "components/header";
+@import "components/footer";
+
+@import "components/nav";
+@import "components/nav-sections/portfolio";
+@import "components/nav-sections/services";
+@import "components/nav-sections/contacts";
+@import "components/nav-sections/video";
+@import "components/nav-sections/team";
+@import "components/nav-sections/awards";
+@import "components/nav-sections/blog";
+@import "components/letter";
+//UI
+@import "UI/animation";
+@import "UI/plyr-player";
+@import "UI/particles";
+@import "UI/btn";
+@import "UI/state";
+@import "UI/fancybox";
+@import "UI/scroll";
+@import "UI/slider";
+@import "UI/bg-slider";
+@import "UI/svg";
+@import "UI/thanks-block";
+//Pages
+
+@import "pages/portfolio-page";
+@import "pages/portfolio-page-project";
+@import "pages/blog-page";
+/* purgecss end ignore */
