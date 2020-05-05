@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Maksim Barkhush",
+  "author": "Maksim Barhush",
   "license": "",
   "devDependencies": {
     "@babel/core": "^7.4.5",

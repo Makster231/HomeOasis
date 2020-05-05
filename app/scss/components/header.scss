@@ -1,68 +1,52 @@
-﻿.header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-
-  @media screen and (max-width: 1660px) and (max-height: 756px) {
-    padding-top: 15px;
-  }
-
-  &-logo {
+.header {
+  &-wrapper {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    cursor: pointer;
-    position: relative;
-    z-index: 100;
+    padding-top: 15px;
 
-    .icon-svg {
-      width: 220px;
-      height: 58px;
+    &--logo {
       display: block;
       img {
-        transition: 0.4s ease;
+        width: 272px;
+        height: 99px;
       }
     }
 
-    &:hover {
-      .icon-svg {
-        img {
-          transform: scale(1.05) !important;
+    &--menu {
+      display: none;
+      flex-direction: row;
+      align-items: center;
+
+      &.js_active {
+        display: flex;
+      }
+      li {
+        display: block;
+        margin-left: 25px;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 31px;
+        color: $blue;
+        transition: 0.3s ease;
+        cursor: pointer;
+
+        &:hover,
+        &.js_active {
+          color: $white;
+          text-shadow: 0 -1px 1px $green, 0 -1px 1px $green, 0 1px 1px $green,
+            0 1px 1px $green, -1px 0 1px $green, 1px 0 1px $green,
+            -1px 0 1px $green, 1px 0 1px $green, -1px -1px 1px $green,
+            1px -1px 1px $green, -1px 1px 1px $green, 1px 1px 1px $green,
+            -1px -1px 1px $green, 1px -1px 1px $green, -1px 1px 1px $green,
+            1px 1px 1px $green;
+        }
+
+        &:first-of-type {
+          margin-left: 0;
         }
       }
-    }
-  }
-
-  &-title {
-    position: relative;
-    z-index: 100;
-    font-weight: 700;
-    font-size: 52px;
-    line-height: 1.1;
-    color: $color-black;
-    transition: 0.4s ease;
-    text-shadow: -0 -1px 1px #ffffff, 0 -1px 1px #ffffff, -0 1px 1px #ffffff,
-      0 1px 1px #ffffff, -1px -0 1px #ffffff, 1px -0 1px #ffffff,
-      -1px 0 1px #ffffff, 1px 0 1px #ffffff, -1px -1px 1px #ffffff,
-      1px -1px 1px #ffffff, -1px 1px 1px #ffffff, 1px 1px 1px #ffffff,
-      -1px -1px 1px #ffffff, 1px -1px 1px #ffffff, -1px 1px 1px #ffffff,
-      1px 1px 1px #ffffff;
-    span {
-      opacity: 0;
-    }
-
-    &.nav-animation-show {
-      span {
-        animation: nav-animation-show 0.3s linear 0.3s forwards;
-      }
-    }
-
-    @media screen and (max-width: 1660px) and (max-height: 756px) {
-      font-size: 36px;
     }
   }
 }

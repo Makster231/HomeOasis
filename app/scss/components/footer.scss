@@ -1,42 +1,92 @@
-﻿.footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-
-  @media screen and (max-width: 1660px) and (max-height: 756px) {
+.footer {
+  &-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     padding-bottom: 15px;
-  }
 
-  &-title,
-  &-data a {
-    position: relative;
-    z-index: 1000;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.4;
-    color: $color-black;
-    text-shadow: -0 -1px 1px #ffffff, 0 -1px 1px #ffffff, -0 1px 1px #ffffff,
-      0 1px 1px #ffffff, -1px -0 1px #ffffff, 1px -0 1px #ffffff,
-      -1px 0 1px #ffffff, 1px 0 1px #ffffff, -1px -1px 1px #ffffff,
-      1px -1px 1px #ffffff, -1px 1px 1px #ffffff, 1px 1px 1px #ffffff,
-      -1px -1px 1px #ffffff, 1px -1px 1px #ffffff, -1px 1px 1px #ffffff,
-      1px 1px 1px #ffffff;
-  }
+    &--data {
+      display: flex;
+      flex-direction: column;
+      a {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 31px;
+        color: $blue;
+        text-decoration: none;
+        text-shadow: 0 -1px 1px $white, 0 -1px 1px $white, 0 1px 1px $white,
+          0 1px 1px $white, -1px 0 1px $white, 1px 0 1px $white,
+          -1px 0 1px $white, 1px 0 1px $white, -1px -1px 1px $white,
+          1px -1px 1px $white, -1px 1px 1px $white, 1px 1px 1px $white,
+          -1px -1px 1px $white, 1px -1px 1px $white, -1px 1px 1px $white,
+          1px 1px 1px $white;
+        transition: 0.3s ease;
 
-  &-data {
-    text-align: right;
-    position: relative;
-    z-index: 10;
-    a {
-      transition: 0.3s ease;
-      color: $color-primary;
+        &:hover {
+          color: $white;
+          text-shadow: 0 -1px 1px $green, 0 -1px 1px $green, 0 1px 1px $green,
+            0 1px 1px $green, -1px 0 1px $green, 1px 0 1px $green,
+            -1px 0 1px $green, 1px 0 1px $green, -1px -1px 1px $green,
+            1px -1px 1px $green, -1px 1px 1px $green, 1px 1px 1px $green,
+            -1px -1px 1px $green, 1px -1px 1px $green, -1px 1px 1px $green,
+            1px 1px 1px $green;
+        }
+      }
+    }
 
-      &:hover {
-        color: $color-success;
+    &--description {
+      width: 370px;
+      p {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 31px;
+        text-align: right;
+        color: #363838;
+        text-shadow: 0 -1px 1px $white, 0 -1px 1px $white, 0 1px 1px $white,
+          0 1px 1px $white, -1px 0 1px $white, 1px 0 1px $white,
+          -1px 0 1px $white, 1px 0 1px $white, -1px -1px 1px $white,
+          1px -1px 1px $white, -1px 1px 1px $white, 1px 1px 1px $white,
+          -1px -1px 1px $white, 1px -1px 1px $white, -1px 1px 1px $white,
+          1px 1px 1px $white;
+      }
+    }
+
+    &--navigation {
+      flex-direction: row;
+      display: none;
+
+      &.js_active{
+      display: flex;
+      }
+
+      .footer-navigation--arrow {
+        width: 22px;
+        height: 40px;
+        cursor: pointer;
+        margin-right: 30px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        &.arrow-left {
+          background-image: url(../../images/icons/arrow-left.svg);
+
+          &:hover {
+            background-image: url(../../images/icons/arrow-left--active.svg);
+          }
+        }
+
+        &.arrow-right {
+          background-image: url(../../images/icons/arrow-right.svg);
+
+          &:hover {
+            background-image: url(../../images/icons/arrow-right--active.svg);
+          }
+        }
+        &:last-child {
+          margin-right: 0;
+        }
       }
     }
   }

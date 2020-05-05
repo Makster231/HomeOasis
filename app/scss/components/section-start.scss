@@ -1,0 +1,47 @@
+.section-start {
+  position: absolute;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &--menu {
+    position: relative;
+    z-index: 10;
+
+    li {
+      display: block;
+      max-width: max-content;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 31px;
+      color: $blue;
+      transition: 0.3s ease;
+      cursor: pointer;
+
+      &:hover {
+        color: $white;
+        text-shadow: 0 -1px 1px $green, 0 -1px 1px $green, 0 1px 1px $green,
+          0 1px 1px $green, -1px 0 1px $green, 1px 0 1px $green,
+          -1px 0 1px $green, 1px 0 1px $green, -1px -1px 1px $green,
+          1px -1px 1px $green, -1px 1px 1px $green, 1px 1px 1px $green,
+          -1px -1px 1px $green, 1px -1px 1px $green, -1px 1px 1px $green,
+          1px 1px 1px $green;
+      }
+    }
+  }
+
+  &--video {
+    mix-blend-mode: darken;
+    video {
+      position: fixed;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      height: 100%;
+      width: 90%;
+      object-fit: cover;
+      transform: scale(1.2);
+    }
+  }
+}
