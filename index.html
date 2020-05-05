@@ -31,7 +31,7 @@
             <img src="./images/logo.svg" alt="Logo">
           </div>
 
-          <ul class="header-wrapper--menu">
+          <ul class="header-wrapper--menu js_header-menu">
             <li class="js_active">
               Портфолио
             </li>
@@ -58,36 +58,126 @@
       </header>
 
 <main class="main-page container">
+  
+  <section class="section-start js_section-start">
+    <ul class="section-start--menu">
+      <li class="js_nav-item js_nav-portfolio js_active">
+        Портфолио
+      </li>
+      <li class="js_nav-item js_nav-video">
+        Видео о компании
+      </li>
+      <li class="js_nav-item js_nav-awards">
+        Награды
+      </li>
+      <li class="js_nav-item js_nav-team">
+        Команда
+      </li>
+      <li class="js_nav-item js_nav-services">
+        Услуги
+      </li>
+      <li class="js_nav-item js_nav-blog">
+        Блог
+      </li>
+      <li class="js_nav-item js_nav-contacts">
+        Контакты
+      </li>
+    </ul>
+  
+    <div class="section-start--video">
+      <video
+        src="./video/section-start--video.mp4"
+        autoplay=""
+        muted=""
+      ></video>
+    </div>
+  </section>
 
-    <section class="section-start">
-        <ul class="section-start--menu">
-          <li class="js_active">
-            Портфолио
-          </li>
-          <li>
-            Видео о компании
-          </li>
-          <li>
-            Награды
-          </li>
-          <li>
-            Команда
-          </li>
-          <li>
-            Услуги
-          </li>
-          <li>
-            Блог
-          </li>
-          <li>
-            Контакты
-          </li>
-        </ul>
-        
-        <div class="section-start--video">
-          <video src="./video/section-start--video.mp4"  autoplay="" muted=""></video>
+  <section class="section-portfolio js_section-portfolio js_hidden">
+    <div class="section-portfolio--wrapper js_section-portfolio--slider">
+      <div class="section-portfolio--slide js_portfolio-slider--item">
+        <div class="section-slide--one mb-20">
+          <div class="section-slide--block">
+            <img
+              src="./images/portfolio/gruzino/img_1.jpg"
+              alt="Image"
+              data-object-fit="cover"
+            />
+            <h3>
+              Грузино
+            </h3>
+            <p>
+              Государственные проекты
+            </p>
+          </div>
         </div>
-    </section>
+  
+        <div class="section-slide--two">
+          <div class="section-slide--block">
+            <img
+              src="./images/portfolio/gruzino/img_1.jpg"
+              alt="Image"
+              data-object-fit="cover"
+            />
+            <h3>
+              Грузино
+            </h3>
+            <p>
+              Государственные проекты
+            </p>
+          </div>
+          <div class="section-slide--block">
+            <img
+              src="./images/portfolio/gruzino/img_1.jpg"
+              alt="Image"
+              data-object-fit="cover"
+            />
+            <h3>
+              Грузино
+            </h3>
+            <p>
+              Государственные проекты
+            </p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="section-portfolio--slide js_portfolio-slider--item">
+        
+        <div class="section-slide--one mb-20">
+          <div class="section-slide--block">
+            <img
+              src="./images/portfolio/gruzino/img_1.jpg"
+              alt="Image"
+              data-object-fit="cover"
+            />
+            <h3>
+              Грузино
+            </h3>
+            <p>
+              Государственные проекты
+            </p>
+          </div>
+        </div>
+  
+        <div class="section-slide--one">
+          <div class="section-slide--block">
+            <img
+              src="./images/portfolio/gruzino/img_1.jpg"
+              alt="Image"
+              data-object-fit="cover"
+            />
+            <h3>
+              Грузино
+            </h3>
+            <p>
+              Государственные проекты
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 </main>
 
@@ -99,16 +189,16 @@
     <a href="mailto:home-oasis@mail.ru">home-oasis@mail.ru</a>
   </div>
 
-  <div class="footer-wrapper--description">
+  <div class="footer-wrapper--description js_footer-description">
     <p>
       Благоустройство <br>
       и строительные работы с 2006 г.
     </p>
   </div>
 
-  <div class="footer-wrapper--navigation">
-    <div class="footer-navigation--arrow arrow-left"></div>
-    <div class="footer-navigation--arrow arrow-right"></div>
+  <div class="footer-wrapper--navigation js_footer-navigation">
+    <div class="footer-navigation--arrow arrow-left js_navigation-arrow js_arrow-left"></div>
+    <div class="footer-navigation--arrow arrow-right js_navigation-arrow js_arrow-right"></div>
   </div>
 
 </div>
@@ -118,6 +208,8 @@
 </div>
 <!-- Jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- OwlCarousel2 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <!-- JS -->
 <script src="./app/js/custom.js"></script>
 </body>

@@ -18,9 +18,11 @@
       display: none;
       flex-direction: row;
       align-items: center;
+      opacity: 0;
 
       &.js_active {
         display: flex;
+        animation: fade-in 1s linear 0s forwards;
       }
       li {
         display: block;
