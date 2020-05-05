@@ -1,6 +1,4 @@
 (function ($, window, document) {
-
-
   function CheckLocationPages(event) {
     if (
       $(location).attr("href") !== $(location).attr("href").split("/")[2] &&
@@ -64,7 +62,6 @@
       } else {
         $(".js-section-team").addClass("is-hidden");
       }
-      
 
       // Click on services point
       if ($this.is(".js-is-services")) {
@@ -93,7 +90,6 @@
         }
       }
 
-      
       if ($this.is(".js-is-blog")) {
         $titles_block.html("<span>" + titles.blog + "</span>");
         $main_page.attr("data-role", dataRole.blog);
@@ -105,6 +101,8 @@
       if ($this.is(".js-is-contacts")) {
         $titles_block.html("<span>" + titles.contacts + "</span>");
         $main_page.attr("data-role", dataRole.contacts);
+        $(".particles-js").addClass("js_bg-transparent");
+
         $(".js-section-contacts")
           .addClass("js-active")
           .removeClass("is-hidden");
@@ -124,6 +122,8 @@
           $(".owl-next").trigger("click");
         });
       } else {
+        $(".particles-js").removeClass("js_bg-transparent");
+
         $(".js-section-contacts")
           .addClass("is-hidden")
           .removeClass("js-active");
@@ -146,6 +146,7 @@
   function logoClick() {
     $(".js-logo").click(function (e) {
       $(".footer-data").html($footer_data);
+      $(".particles-js").addClass("js_bg-transparent");
       // if !== main page - redirect
       CheckLocationPages(e);
       // remove display:none from sections
@@ -238,6 +239,16 @@
 
     contactsBgSlider();
 
+    if (
+      $(".portfolio-page-project").length ||
+      $(".portfolio-page").length ||
+      $(".blog-page").length
+    ) {
+      $(".particles-js").removeClass("js_bg-transparent");
+    } else {
+      $(".particles-js").addClass("js_bg-transparent");
+    }
+
     if ($(".portfolio-page-project").length) {
       projectPageSlider();
 
@@ -249,7 +260,6 @@
         $(".owl-next").trigger("click");
       });
     }
-
 
     if ($(".blog-page").length) {
       blogPageSlider();

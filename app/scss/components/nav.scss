@@ -17,18 +17,21 @@
     line-height: 1.4;
     color: $color-primary;
     transition: color 0.5s ease;
+    transition-property: color, text-shadow !important;
     cursor: pointer;
     position: relative;
-
-    &:hover {
-      color: $color-success;
-      width: 100%;
-    }
-
     &.js-active,
-    &:active {
-      transition: 0s;
-      color: darken($color-success,10%);
+    &:hover {
+      color: $color-white;
+      text-shadow: -0 -1px 1px $color-success, 0 -1px 1px $color-success,
+        -0 1px 1px $color-success, 0 1px 1px $color-success,
+        -1px -0 1px $color-success, 1px -0 1px $color-success,
+        -1px 0 1px $color-success, 1px 0 1px $color-success,
+        -1px -1px 1px $color-success, 1px -1px 1px $color-success,
+        -1px 1px 1px $color-success, 1px 1px 1px $color-success,
+        -1px -1px 1px $color-success, 1px -1px 1px $color-success,
+        -1px 1px 1px $color-success, 1px 1px 1px $color-success;
+      width: 100%;
     }
 
     @media screen and (max-width: 1660px) and (max-height: 756px) {
@@ -48,11 +51,14 @@
       // transition: opacity 0.4s ease;
       letter-spacing: 0.05rem;
       color: $color-white;
-      text-shadow: -0 -1px 1px #000, 0 -1px 1px #000, -0 1px 1px #000,
-        0 1px 1px #000, -1px -0 1px #000, 1px -0 1px #000, -1px 0 1px #000,
-        1px 0 1px #000, -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000,
-        1px 1px 1px #000, -1px -1px 1px #000, 1px -1px 1px #000,
-        -1px 1px 1px #000, 1px 1px 1px #000;
+      text-shadow: -0 -1px 1px $color-success, 0 -1px 1px $color-success,
+        -0 1px 1px $color-success, 0 1px 1px $color-success,
+        -1px -0 1px $color-success, 1px -0 1px $color-success,
+        -1px 0 1px $color-success, 1px 0 1px $color-success,
+        -1px -1px 1px $color-success, 1px -1px 1px $color-success,
+        -1px 1px 1px $color-success, 1px 1px 1px $color-success,
+        -1px -1px 1px $color-success, 1px -1px 1px $color-success,
+        -1px 1px 1px $color-success, 1px 1px 1px $color-success;
     }
 
     li {
