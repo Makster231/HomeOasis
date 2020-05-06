@@ -18,6 +18,8 @@
 
 
       if ($this.is(".js_nav-portfolio")) {
+        // bind arrows for portfolio slider 
+        SliderNavigation(true, ".js_portfolio-slider");
         // Показываем блок портфолио
         $(".js_section-portfolio").removeClass("js_hidden");
         // Показываем стрелки, добавляем класс пункту меню

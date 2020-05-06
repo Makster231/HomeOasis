@@ -220,11 +220,13 @@ img[data-object-fit="cover"] { object-fit: cover; }
 
 .section-portfolio { width: 100%; }
 
-.section-portfolio--wrapper { display: flex; flex-direction: row; justify-content: space-between; }
+.section-portfolio .owl-stage-outer { height: 100%; }
 
-.section-portfolio--slide { margin-left: 20px; width: calc(50% - 10px); }
+.section-portfolio .owl-stage { height: 100%; display: flex; flex-direction: row; }
 
-.section-portfolio--slide:first-of-type { margin-left: 0; }
+.section-portfolio--wrapper { display: flex; flex-direction: row; justify-content: space-between; overflow: hidden; }
+
+.section-portfolio--slide { margin-left: 10px; width: calc(100% - 20px); }
 
 .section-portfolio .section-slide--block { height: 300px; position: relative; display: flex; flex-direction: column; justify-content: flex-end; padding-bottom: 10px; cursor: pointer; overflow: hidden; box-sizing: border-box; }
 
