@@ -1,3 +1,4 @@
+// Bind arrows to contacts Slider
 function contactsSliderNavigation(isActive) {
   if (isActive) {
     $(".js_arrow-left").click(function () {

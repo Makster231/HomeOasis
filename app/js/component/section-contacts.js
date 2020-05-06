@@ -16,6 +16,6 @@
   }
 
   $(() => {
-    contactsSlider()
+    contactsSlider();
   });
 })(window.jQuery, window, document);

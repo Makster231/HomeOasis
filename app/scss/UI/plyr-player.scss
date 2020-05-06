@@ -1,10 +1,5 @@
 ﻿﻿s {
 }
-@keyframes plyr-progress {
-  to {
-    background-position: 25px 0;
-  }
-}
 
 @-webkit-keyframes plyr-progress {
   to {
@@ -19,6 +14,12 @@
 }
 
 @-o-keyframes plyr-progress {
+  to {
+    background-position: 25px 0;
+  }
+}
+
+@keyframes plyr-progress {
   to {
     background-position: 25px 0;
   }
@@ -126,6 +127,7 @@
   font-weight: 500;
   line-height: 1.7;
   max-width: 100%;
+  max-height: auto;
   min-width: 200px;
   position: relative;
   text-shadow: none;
@@ -264,7 +266,7 @@
 }
 
 .plyr__control {
-  background: rgba($green, 0.75);
+  background: $green;
   border: 0;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -318,12 +320,12 @@
 .plyr--paused .plyr__controls__item[data-plyr="play"],
 .plyr--playing .plyr__controls__item[data-plyr="play"] {
   min-width: 50px;
-  background: rgba($green, 0.75);
+  background: $green;
 }
 
 .plyr--playing .plyr__controls__item[data-plyr="play"] {
   min-width: 50px;
-  background: rgba($green, 0.75);
+  background: $green;
 }
 
 .plyr--playing .plyr__controls {
@@ -349,39 +351,19 @@ a.plyr__control::before {
 .plyr--audio .plyr__control.plyr__tab-focus,
 .plyr--audio .plyr__control:hover,
 .plyr--audio .plyr__control[aria-expanded="true"] {
-  background: rgba($green, 0.75);
+  background: $green;
   color: #fff;
 }
 
 .plyr--video .plyr__control.plyr__tab-focus,
 .plyr--video .plyr__control:hover,
 .plyr--video .plyr__control[aria-expanded="true"] {
-  background: rgba($green, 0.75);
+  background: $green;
   color: #fff;
 }
 
 .plyr__control--overlaid {
   display: none !important;
-  background: rgba(79, 177, 242, 0.8);
-  border: 0;
-  -webkit-border-radius: 100%;
-  -moz-border-radius: 100%;
-  border-radius: 100%;
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
-  color: #fff;
-  display: none;
-  left: 50%;
-  padding: 15px;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  z-index: 2;
 }
 
 .plyr__control--overlaid svg {
@@ -391,7 +373,7 @@ a.plyr__control::before {
 
 .plyr__control--overlaid:focus,
 .plyr__control--overlaid:hover {
-  background: rgba($green, 0.75);
+  background: $green;
 }
 
 .plyr--playing .plyr__control--overlaid {
@@ -401,7 +383,6 @@ a.plyr__control::before {
 
 .plyr--full-ui.plyr--video .plyr__control--overlaid {
   display: block;
-  border-radius: 15px;
 }
 
 .plyr--full-ui ::-webkit-media-controls {
@@ -768,7 +749,7 @@ a.plyr__control::before {
 
 .plyr__menu__container
   .plyr__control[role="menuitemradio"][aria-checked="true"]::before {
-  background: rgba($green, 0.75);
+  background: $green;
 }
 
 .plyr__menu__container
@@ -812,7 +793,7 @@ a.plyr__control::before {
   -webkit-border-radius: 26px;
   -moz-border-radius: 26px;
   border-radius: 26px;
-  color: rgba($green, 0.75);
+  color: $green;
   display: block;
   height: 19px;
   margin: 0;
@@ -1053,9 +1034,14 @@ a.plyr__control::before {
 }
 
 .plyr__poster {
+  max-width: 100%;
+  max-height: auto;
   background-color: #000;
   background-position: 50% 50%;
   background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   height: 100%;
   left: 0;
@@ -1244,8 +1230,9 @@ a.plyr__control::before {
 
 .plyr--video {
   background: #000;
-  overflow: hidden;
+  margin: 0 auto;
   height: 100%;
+  width: 100%;
 }
 
 .plyr--video.plyr--menu-open {
@@ -1265,19 +1252,20 @@ a.plyr__control::before {
 .plyr__video-embed,
 .plyr__video-wrapper--fixed-ratio {
   height: 0;
-  padding-bottom: 56.25%;
-}
+  padding-bottom: 750px !important;
 
-.plyr__video-wrapper--fixed-ratio {
-  height: 100%;
-}
-
-.plyr__video-wrapper--fixed-ratio video {
-  object-fit: cover;
+  @media screen and (max-width: 960px) {
+    padding-bottom: 500px !important;
+  }
+  @media screen and (max-width: 640px) {
+    padding-bottom: 400px !important;
+  }
 }
 
 .plyr__video-embed iframe,
 .plyr__video-wrapper--fixed-ratio video {
+  max-width: 100%;
+  max-height: auto;
   border: 0;
   height: 100%;
   left: 0;
@@ -1288,6 +1276,7 @@ a.plyr__control::before {
   -ms-user-select: none;
   user-select: none;
   width: 100%;
+  object-fit: cover;
 }
 
 .plyr--full-ui .plyr__video-embed > .plyr__video-embed__container {
@@ -1339,7 +1328,7 @@ a.plyr__control::before {
 }
 
 .plyr__progress__buffer::-webkit-progress-value {
-  background: #a9e4df;
+  background: $green;
   -webkit-border-radius: 0;
   border-radius: 0;
   min-width: 32px;
@@ -2001,8 +1990,8 @@ a.plyr__control::before {
   left: 0;
   max-height: none;
   max-width: none;
-  -o-object-fit: contain;
-  object-fit: contain;
+  -o-object-fit: cover;
+  object-fit: cover;
   position: absolute;
   top: 0;
   width: 100%;
@@ -2019,10 +2008,12 @@ a.plyr__control::before {
   clip: rect(1px, 1px, 1px, 1px);
   overflow: hidden;
   border: 0 !important;
-  height: 1px !important;
+  height: 100% !important;
   padding: 0 !important;
   position: absolute !important;
-  width: 1px !important;
+  width: 100% !important;
+  left: 0;
+  top: 0;
 }
 
 .plyr [hidden] {
@@ -2031,12 +2022,10 @@ a.plyr__control::before {
 
 button.plyr__control--overlaid {
   padding: 0;
-  height: 48px;
-  width: 69px;
-  -webkit-border-radius: 1px;
-  -moz-border-radius: 1px;
-  border-radius: 1px;
-  background-color: rgba($green, 0.75);
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background-color: $green;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -2044,27 +2033,41 @@ button.plyr__control--overlaid {
 
 @media (min-width: 768px) {
   button.plyr__control--overlaid {
-    height: 81px;
-    width: 127px;
+    height: 90px;
+    width: 90px;
+  }
+}
+
+@media (min-width: 1367px) {
+  button.plyr__control--overlaid {
+    height: 115px;
+    width: 115px;
   }
 }
 
 button.plyr__control--overlaid svg {
-  height: 48px;
-  width: 69px;
+  height: 70px;
+  width: 70px;
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH8AAABRCAMAAADMxYlnAAAAM1BMVEUAAAD///////////////////////////////////////////////////////////////+3leKCAAAAEHRSTlMAEO/fgM9AMCC/r49QcJ9gv9yKxgAAALJJREFUaN7t1ksOwkAQA9Em4Q+Buv9pYYURQ7ZtkPwuELkUqaciIiIiIn7dUl6cjuUE07WMeDpvygawJgCsCQBrAl5ulgTIvK9+vLv0J0AsCRBLAj7Nh+rEaFuN+GLXmACxJEAsCRBLAtY0PUxYN1cDRq0nmUHvPfaMF0Sme3Xx/PnCYFqqkWe8OMeP398dq5nn7Inn7ItnvHjGi8Z76NnvoTe/h8Z7aLzHviIiIiIi/tIDTuchgAUXducAAAAASUVORK5CYII=);
   background-repeat: no-repeat;
   background-position: center;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: contain;
 }
 
 @media (min-width: 768px) {
   button.plyr__control--overlaid svg {
-    height: 81px;
-    width: 127px;
+    height: 90px;
+    width: 90px;
+  }
+}
+
+@media (min-width: 1367px) {
+  button.plyr__control--overlaid svg {
+    height: 115px;
+    width: 115px;
   }
 }
 
@@ -2073,9 +2076,20 @@ button.plyr__control--overlaid svg use {
 }
 
 button.plyr__control--overlaid:hover {
-  background-color: rgba(21, 178, 174, 0.9);
+  background-color: $green;
 }
 
 .plyr--paused .plyr__controls {
   opacity: 0;
+}
+
+#formModal {
+  position: absolute;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  text-align: center;
 }

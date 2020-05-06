@@ -10,6 +10,7 @@
       $(".js_section, .js_footer-services").addClass("js_hidden");
       // Убираем js_active со всех пунктов меню
       $(".js_nav-item").removeClass("js_active");
+      // Unbind arrows for contacts slider 
       contactsSliderNavigation(false);
 
 
@@ -66,7 +67,7 @@
       }
 
       if ($this.is(".js_nav-contacts")) {
-
+      // bind arrows for contacts slider 
         contactsSliderNavigation(true);
         // Меняем цвет фона на белый
         $("body").addClass("js_bg-color--white");

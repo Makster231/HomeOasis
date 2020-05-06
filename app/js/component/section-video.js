@@ -1,10 +1,31 @@
 (function ($, window, document) {
-  function playOnHover() {}
+  // Play video on hover
+  function playOnHover() {
+    $(".js_section-video--block").on("mouseover", function () {
+      $(this).find("video").get(0).play();
+    });
+    $(".js_section-video--block").on("mouseleave", function () {
+      $(this).find("video").get(0).pause();
+    });
+  }
+
+  function videoPlayerInit() {
+    let players = document.querySelectorAll(".js-player"),
+      counter = 0;
+
+    if (!players.length) {
+      return;
+    }
+
+    for (let i = 0; i < players.length; i++) {
+      new Plyr(players[i]);
+    }
+  }
 
   $(() => {
     // Activate Plyr Player
-    const players = Array.from(document.querySelectorAll(".js_player")).map(
-      (p) => new Plyr(p)
-    );
+    videoPlayerInit();
+    // Play video on hover
+    playOnHover();
   });
 })(window.jQuery, window, document);
