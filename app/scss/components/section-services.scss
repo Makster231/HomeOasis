@@ -10,14 +10,26 @@
   &--slider {
     width: 100%;
     max-width: calc(65% - 15px);
-    @media screen and (max-width: 1660px) and (max-height: 768px) {
-      height: 550px;
-      overflow: hidden;
 
-      img {
-        object-fit: contain;
-        height: 100%;
+    .services-slide--img {
+      width: 100%;
+      height: 650px;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      @media screen and (max-width: 1660px) and (max-height: 768px) {
+        height: 500px;
+        overflow: hidden;
       }
+      &.img_1 {
+        background-image: url(../../images/services/img_1.jpg);
+      }
+    }
+
+    @media screen and (max-width: 1660px) and (max-height: 768px) {
+      height: 500px;
+      overflow: hidden;
     }
   }
 
