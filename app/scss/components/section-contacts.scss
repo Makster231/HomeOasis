@@ -1,0 +1,105 @@
+.section-contacts {
+  width: 100%;
+  &--wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &--slider {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 900px;
+    overflow: hidden;
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      z-index: 5;
+      height: 100%;
+      width: 100%;
+      transform: matrix(1, 0, 0, 1, 0, 0);
+      background: rgba(255, 255, 255, 0);
+      background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.5) 50%,
+        rgba(255, 255, 255, 1) 100%
+      );
+    }
+
+    img {
+      max-width: 900px;
+    }
+  }
+
+  .owl-stage-outer {
+    height: 100%;
+  }
+
+  .owl-stage {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  &--content {
+    padding: 15px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 530px;
+    margin-left: auto;
+    display: flex;
+    position: relative;
+    z-index: 10;
+    background: url(../../images/contacts/content-border.svg) center no-repeat;
+    background-size: 100% 100%;
+  }
+
+  h3 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: $black;
+  }
+
+  a,
+  p {
+    font-size: 18px;
+    line-height: 1.4;
+    color: #363838;
+    font-weight: 300;
+    display: block;
+    margin-bottom: 20px;
+    transition: 0.3s ease;
+    text-decoration: none;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    a {
+      margin-bottom: 0;
+      display: inline-block;
+      color: $blue;
+
+      &:hover {
+        color: $white;
+        text-shadow: 0 -1px 1px $green, 0 -1px 1px $green, 0 1px 1px $green,
+          0 1px 1px $green, -1px 0 1px $green, 1px 0 1px $green,
+          -1px 0 1px $green, 1px 0 1px $green, -1px -1px 1px $green,
+          1px -1px 1px $green, -1px 1px 1px $green, 1px 1px 1px $green,
+          -1px -1px 1px $green, 1px -1px 1px $green, -1px 1px 1px $green,
+          1px 1px 1px $green;
+      }
+    }
+  }
+}
