@@ -8,6 +8,8 @@
 
     &--logo {
       display: block;
+      position: relative;
+      z-index: 10;
       img {
         width: 272px;
         height: 99px;

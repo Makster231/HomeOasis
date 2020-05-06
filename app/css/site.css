@@ -130,7 +130,7 @@ a, label { -webkit-tap-highlight-color: transparent !important; }
 
 .mb-20 { margin-bottom: 20px; }
 
-body { font-family: "FuturaPT", sans-serif !important; background-color: #e7ffe2; overflow: hidden; }
+body { font-family: "FuturaPT", sans-serif !important; cursor: url(../../images/cursor.png), auto !important; background-color: #e7ffe2; overflow: hidden; }
 
 img { width: 100%; max-width: 100%; object-fit: cover; }
 
@@ -144,7 +144,7 @@ img[data-object-fit="cover"] { object-fit: cover; }
 
 .header-wrapper { display: flex; flex-direction: row; justify-content: space-between; align-items: center; padding-top: 15px; }
 
-.header-wrapper--logo { display: block; }
+.header-wrapper--logo { display: block; position: relative; z-index: 10; }
 
 .header-wrapper--logo img { width: 272px; height: 99px; }
 
