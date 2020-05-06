@@ -136,7 +136,7 @@ a, label { -webkit-tap-highlight-color: transparent !important; }
 
 body { font-family: "FuturaPT", sans-serif !important; cursor: url(../../images/cursor.png), auto !important; background-color: #e7ffe2; overflow: hidden; }
 
-body.bg-color--white { background-color: #fff; }
+body.js_bg-color--white { background-color: #fff; }
 
 img { width: 100%; max-width: 100%; object-fit: cover; }
 
@@ -175,6 +175,18 @@ img[data-object-fit="cover"] { object-fit: cover; }
 .footer-wrapper--description { width: 370px; }
 
 .footer-wrapper--description p { font-weight: bold; font-size: 24px; line-height: 31px; text-align: right; color: #363838; text-shadow: 0 -1px 1px #fff, 0 -1px 1px #fff, 0 1px 1px #fff, 0 1px 1px #fff, -1px 0 1px #fff, 1px 0 1px #fff, -1px 0 1px #fff, 1px 0 1px #fff, -1px -1px 1px #fff, 1px -1px 1px #fff, -1px 1px 1px #fff, 1px 1px 1px #fff, -1px -1px 1px #fff, 1px -1px 1px #fff, -1px 1px 1px #fff, 1px 1px 1px #fff; }
+
+.footer-wrapper--services { opacity: 0; animation: slide-right 0.3s linear 0.1s forwards; display: flex; flex-direction: row; justify-content: flex-end; align-items: flex-end; width: 100%; max-width: 950px; margin-left: auto; margin-right: 30px; }
+
+.footer-wrapper--services P { font-weight: bold; font-size: 24px; line-height: 31px; color: #0F4C81; transition: 0.4s ease; cursor: pointer; margin-left: 30px; }
+
+.footer-wrapper--services P:first-of-type { margin-left: 0; }
+
+.footer-wrapper--services P.js_active, .footer-wrapper--services P:hover { color: #7ec845; }
+
+.footer-wrapper--services button { margin-left: 130px; display: block; background: #0F4C81; border: 2px solid #0F4C81; box-sizing: border-box; outline: 0 !important; border-radius: 5px; padding-top: 14px; padding-bottom: 14px; width: 100%; max-width: 250px; font-weight: bold; font-size: 18px; line-height: 22px; color: #fff; text-align: center; cursor: pointer; transition: 0.4s ease; }
+
+.footer-wrapper--services button:hover { border-color: #07243c; background-color: #07243c; }
 
 .footer-wrapper--navigation { flex-direction: row; display: none; opacity: 0; }
 
@@ -265,6 +277,25 @@ img[data-object-fit="cover"] { object-fit: cover; }
 .section-team--slide h3 { font-weight: bold; font-size: 42px; line-height: 54px; color: #363838; margin-bottom: 10px; text-shadow: 0 -1px 1px #fff, 0 -1px 1px #fff, 0 1px 1px #fff, 0 1px 1px #fff, -1px 0 1px #fff, 1px 0 1px #fff, -1px 0 1px #fff, 1px 0 1px #fff, -1px -1px 1px #fff, 1px -1px 1px #fff, -1px 1px 1px #fff, 1px 1px 1px #fff, -1px -1px 1px #fff, 1px -1px 1px #fff, -1px 1px 1px #fff, 1px 1px 1px #fff; }
 
 .section-team--slide p { font-size: 36px; line-height: 40px; color: #363838; text-shadow: 0 -1px 1px #fff, 0 -1px 1px #fff, 0 1px 1px #fff, 0 1px 1px #fff, -1px 0 1px #fff, 1px 0 1px #fff, -1px 0 1px #fff, 1px 0 1px #fff, -1px -1px 1px #fff, 1px -1px 1px #fff, -1px 1px 1px #fff, 1px 1px 1px #fff, -1px -1px 1px #fff, 1px -1px 1px #fff, -1px 1px 1px #fff, 1px 1px 1px #fff; }
+
+.section-services { overflow: hidden; width: 100%; }
+
+.section-services--wrapper { display: flex; flex-direction: row; justify-content: space-between; }
+
+.section-services--slider { width: 100%; max-width: calc(65% - 15px); }
+
+@media screen and (max-width: 1660px) and (max-height: 768px) { .section-services--slider { height: 550px; overflow: hidden; }
+  .section-services--slider img { object-fit: contain; height: 100%; } }
+
+.section-services--content { width: 100%; position: relative; max-width: calc(35% - 15px); padding-right: 30px; overflow-y: auto; max-height: 650px; box-sizing: border-box; }
+
+@media screen and (max-width: 1660px) and (max-height: 768px) { .section-services--content { max-height: 550px; } }
+
+.section-services--content::-webkit-scrollbar { width: 3px; }
+
+.section-services--content::-webkit-scrollbar-thumb { -webkit-border-radius: 10px; border-radius: 10px; background-color: #bdbdbd; }
+
+.section-services--content p, .section-services--content li { font-weight: 300; font-size: 24px; line-height: 29px; color: #363838; }
 
 .section-blog { width: 100%; }
 
@@ -442,6 +473,11 @@ img[data-object-fit="cover"] { object-fit: cover; }
 .js_animation-blog--page .js_animation-2 { opacity: 0; animation: slide-left 0.3s linear 0.4s forwards; }
 
 .js_animation-blog--page .js_animation-3 { opacity: 0; animation: slide-right 0.3s linear 0.7s forwards; }
+
+/*  Анимация для блока Услуги*/
+.js_animation-services .js_animation-1 { opacity: 0; animation: slide-left 0.3s linear 0.1s forwards; }
+
+.js_animation-services .js_animation-2 { opacity: 0; animation: slide-down 0.3s linear 0.1s forwards; }
 
 @keyframes plyr-progress { to { background-position: 25px 0; } }
 
