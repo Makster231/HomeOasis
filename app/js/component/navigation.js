@@ -25,6 +25,18 @@
         $(".js_nav-video").addClass("js_active");
       }
 
+      if ($this.is(".js_nav-team")) {
+        // Показываем блок Блог
+        $(".js_section-team").removeClass("js_hidden");
+        // Показываем стрелки, добавляем класс пункту меню
+        $(".js_footer-navigation, .js_nav-team").addClass("js_active");
+        // убираем текст в футере
+        $(".js_footer-description").addClass("js_hidden");
+        // добавляем стрелкам метку для слайдера
+        $(".js_footer-navigation").addClass("js_navigation-team");
+      }
+
+
       if ($this.is(".js_nav-blog")) {
         // Показываем блок Блог
         $(".js_section-blog").removeClass("js_hidden");
