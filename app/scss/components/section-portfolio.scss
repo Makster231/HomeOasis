@@ -8,7 +8,7 @@
   }
   &--slide {
     margin-left: 20px;
-    width: 690px;
+    width: calc(50% - 10px);
 
     &:first-of-type {
       margin-left: 0;

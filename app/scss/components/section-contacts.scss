@@ -15,10 +15,15 @@
     height: 100%;
     width: 900px;
     overflow: hidden;
+
+    @media (min-width: 1660px) {
+      width: 1300px;
+    }
+
     &::after {
       content: "";
       position: absolute;
-      right: 0;
+      right: -2px;
       bottom: 0;
       top: 0;
       z-index: 5;
@@ -36,6 +41,11 @@
 
     img {
       max-width: 900px;
+      height: 100%;
+
+      @media (min-width: 1660px) {
+        max-width: 1300px;
+      }
     }
   }
 
