@@ -10,8 +10,10 @@
       $(".js_section, .js_footer-services").addClass("js_hidden");
       // Убираем js_active со всех пунктов меню
       $(".js_nav-item").removeClass("js_active");
+
+      $(".js_footer-navigation").removeClass("js_navigation-portfolio  js_navigation-team js_navigation-services js_navigation-blog js_navigation-contacts");
       // Unbind arrows for contacts slider 
-      contactsSliderNavigation(false);
+      SliderNavigation(false);
 
 
 
@@ -25,13 +27,17 @@
       }
 
       if ($this.is(".js_nav-video")) {
-        // Показываем блок Видео
-        $(".js_section-video").removeClass("js_hidden");
+        // Показываем блок Видео и показыаем текст в футере
+        $(".js_section-video, .js_footer-description").removeClass("js_hidden");
         // добавляем класс пункту меню
         $(".js_nav-video").addClass("js_active");
+        // Убираем стрелкам в футере 
+        $(".js_footer-navigation").removeClass("js_active");
       }
 
       if ($this.is(".js_nav-team")) {
+        // bind arrows for team slider 
+        SliderNavigation(true, ".js_team-slider");
         // Показываем блок Блог
         $(".js_section-team").removeClass("js_hidden");
         // Показываем стрелки, добавляем класс пункту меню
@@ -68,7 +74,7 @@
 
       if ($this.is(".js_nav-contacts")) {
       // bind arrows for contacts slider 
-        contactsSliderNavigation(true);
+        SliderNavigation(true, ".js_contacts-slider");
         // Меняем цвет фона на белый
         $("body").addClass("js_bg-color--white");
         // Показываем блок Контактов

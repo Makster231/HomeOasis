@@ -1,5 +1,16 @@
 .section-team {
   width: 100%;
+
+  .owl-stage-outer {
+    height: 100%;
+  }
+
+  .owl-stage {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
   &--slider {
     display: flex;
     flex-direction: row;
@@ -7,13 +18,21 @@
   }
 
   &--slide {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     .team-slide--media {
-      position: fixed;
-      left: 0;
-      bottom: -115px;
+      // position: fixed;
+      // left: 0;
+      // bottom: -115px;
+      // width: 100%;
+      // max-width: 100%;
+      // height: 100%;
+
+      
       width: 100%;
-      max-width: 100%;
-      height: 100%;
+      max-width: 900px;
+      height: 677px;
 
       img {
         height: 100%;
@@ -22,7 +41,7 @@
     }
 
     .team-slide--content {
-      margin-left: 800px;
+      // margin-left: 800px;
     }
 
     h3 {
