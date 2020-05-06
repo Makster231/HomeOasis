@@ -341,7 +341,6 @@ html input[disabled] {
  *    Known issue: excess padding remains in IE 6.
  */
 
-
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box; /* 1 */
@@ -480,6 +479,11 @@ input[type="number"] {
 input::-webkit-inner-spin-button,
 input::-webkit-outer-spin-button {
   -webkit-appearance: none !important;
+}
+
+a {
+  text-decoration: none;
+  outline: 0 !important;
 }
 
 a,
