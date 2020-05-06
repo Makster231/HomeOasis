@@ -49,6 +49,7 @@ const js_plugins = [
 	path.app.jsComponents + 'section-portfolio.js',
 	path.app.jsComponents + 'section-video.js',
 	path.app.jsComponents + 'section-contacts.js',
+	path.app.jsComponents + 'section-blog.js',
 	path.app.jsComponents + 'section-team.js',
 	path.app.jsComponents + 'navigation.js',
 	path.app.jsComponents + 'object-fit-polyfill.js',

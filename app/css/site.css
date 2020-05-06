@@ -314,9 +314,13 @@ img[data-object-fit="cover"] { object-fit: cover; }
 
 .section-blog { width: 100%; }
 
+.section-blog .owl-stage-outer { height: 100%; }
+
+.section-blog .owl-stage { height: 100%; display: flex; flex-direction: row; }
+
 .section-blog--slider { display: flex; flex-direction: row; justify-content: space-between; align-items: center; overflow: hidden; }
 
-.section-blog--slide { display: flex; flex-direction: column; width: 100%; max-width: calc(33% - 40px); }
+.section-blog--slide { display: flex; flex-direction: column; width: 100%; max-width: calc(100% - 40px); }
 
 .section-blog--slide img { margin-bottom: 20px; display: block; }
 

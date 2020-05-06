@@ -52,7 +52,7 @@
 
 
       if ($this.is(".js_nav-services")) {
-        // Показываем блок Блог
+        // Показываем блок Услуг
         $(".js_section-services, .js_footer-services").removeClass("js_hidden");
         // Показываем стрелки, добавляем класс пункту меню
         $(".js_footer-navigation, .js_nav-services").addClass("js_active");
@@ -64,6 +64,8 @@
 
 
       if ($this.is(".js_nav-blog")) {
+        // bind arrows for blog slider 
+        SliderNavigation(true, ".js_blog-slider");
         // Показываем блок Блог
         $(".js_section-blog").removeClass("js_hidden");
         // Показываем стрелки, добавляем класс пункту меню

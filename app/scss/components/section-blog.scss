@@ -1,6 +1,16 @@
 .section-blog {
   width: 100%;
 
+  .owl-stage-outer {
+    height: 100%;
+  }
+
+  .owl-stage {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
   &--slider {
     display: flex;
     flex-direction: row;
@@ -13,7 +23,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: calc(33% - 40px);
+    max-width: calc(100% - 40px);
 
     img {
       margin-bottom: 20px;
