@@ -10,6 +10,8 @@
       $(".js_section, .js_footer-services").addClass("js_hidden");
       // Убираем js_active со всех пунктов меню
       $(".js_nav-item").removeClass("js_active");
+      contactsSliderNavigation(false);
+
 
 
       if ($this.is(".js_nav-portfolio")) {
@@ -64,6 +66,8 @@
       }
 
       if ($this.is(".js_nav-contacts")) {
+
+        contactsSliderNavigation(true);
         // Меняем цвет фона на белый
         $("body").addClass("js_bg-color--white");
         // Показываем блок Контактов
