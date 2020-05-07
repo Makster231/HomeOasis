@@ -342,21 +342,21 @@ img { width: 100%; max-width: 100%; object-fit: cover; }
 
 .section-services .owl-stage { height: 100%; display: flex; flex-direction: row; }
 
-.section-services .section-services--block { display: flex; flex-direction: row; justify-content: space-between; }
+.section-services .section-services--block { display: flex; flex-direction: row; justify-content: space-between; align-items: center; }
 
 .section-services--slider { width: 100%; max-width: calc(65% - 15px); }
 
-.section-services--slider .services-slide--img { width: 100%; height: 650px; background-size: 100% 100%; background-repeat: no-repeat; background-position: center; }
+.section-services--slider .services-slide--img { width: 100%; height: 650px; display: block; }
+
+.section-services--slider .services-slide--img img { object-fit: fill; height: 100%; }
 
 @media screen and (max-width: 1660px) and (max-height: 768px) { .section-services--slider .services-slide--img { height: 500px; overflow: hidden; } }
 
-.section-services--slider .services-slide--img.img_1 { background-image: url(../../images/services/img_1.jpg); }
-
 @media screen and (max-width: 1660px) and (max-height: 768px) { .section-services--slider { height: 500px; overflow: hidden; } }
 
-.section-services--content { width: 100%; position: relative; max-width: calc(35% - 15px); padding-right: 30px; overflow-y: auto; max-height: 650px; box-sizing: border-box; }
+.section-services--content { width: 100%; position: relative; max-width: calc(35% - 15px); padding-right: 30px; overflow-y: auto; max-height: 600px; box-sizing: border-box; }
 
-@media screen and (max-width: 1660px) and (max-height: 768px) { .section-services--content { max-height: 550px; } }
+@media screen and (max-width: 1660px) and (max-height: 768px) { .section-services--content { max-height: 500px; } }
 
 .section-services--content::-webkit-scrollbar { width: 3px; }
 
