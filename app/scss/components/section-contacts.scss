@@ -3,6 +3,10 @@
   position: relative;
   z-index: 3;
 
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    height: 500px;
+  }
+
   .owl-stage-outer {
     height: 100%;
   }
@@ -17,6 +21,10 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    justify-content: space-between;
+    height: 100%;
+    }
   }
 
   &--slider {
@@ -72,6 +80,10 @@
     display: flex;
     background: url(../../images/contacts/content-border.svg) center no-repeat;
     background-size: 100% 100%;
+
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      margin-left: unset;
+    }
   }
 
   h3 {
