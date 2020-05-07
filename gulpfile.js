@@ -47,7 +47,7 @@ const path = {
 const js_plugins = [
 	path.app.jsComponents + 'object-fit-polyfill.js',
 	path.app.jsComponents + 'vars.js',
-	path.app.jsComponents + 'particles.js',
+	path.app.jsComponents + 'particles.js', 
 
 	path.app.jsComponents + 'section-portfolio.js',
 	path.app.jsComponents + 'section-video.js',
@@ -61,6 +61,8 @@ const js_plugins = [
 	path.app.jsComponents + 'page-blog.js',
 
 	path.app.jsComponents + 'navigation.js',
+	path.app.jsComponents + 'secondary-pages-navigation.js',
+	path.app.jsComponents + 'check-UTM.js',
 
 	path.app.jsComponents + 'form.js',
 
