@@ -112,25 +112,5 @@
       },
       "retina_detect": true
     });
-
-
-    /* ---- stats.js config ---- */
-
-    var stats, update;
-    stats = new Stats();
-    stats.setMode(0);
-    stats.domElement.style.position = "absolute";
-    stats.domElement.style.left = "0px";
-    stats.domElement.style.top = "0px";
-    document.body.appendChild(stats.domElement);
-    update = function () {
-      stats.begin();
-      stats.end();
-      requestAnimationFrame(update);
-    };
-    requestAnimationFrame(update);
-    $("div canvas:eq(1), div canvas:eq(2),div canvas:eq(3)").addClass(
-      "d-none"
-    );
   });
 })(window.jQuery, window, document);
