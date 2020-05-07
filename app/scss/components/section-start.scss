@@ -40,14 +40,14 @@
 
   &--video {
     mix-blend-mode: darken;
-    // position: relative;
-
+    z-index: 0;
     video {
       position: fixed;
       right: 0;
       top: 0;
       bottom: 0;
       height: 100%;
+      z-index: 0;
       width: 80%;
       object-fit: cover;
       transform: scale(1.2);

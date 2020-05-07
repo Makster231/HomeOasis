@@ -158,7 +158,7 @@ img { width: 100%; max-width: 100%; object-fit: cover; }
 
 .header-wrapper--logo { display: block; position: relative; z-index: 10; }
 
-.header-wrapper--logo img { width: 272px; height: 99px; }
+.header-wrapper--logo svg { width: 272px; height: 99px; }
 
 .header-wrapper--menu { display: none; flex-direction: row; align-items: center; opacity: 0; position: relative; z-index: 10; }
 
@@ -234,9 +234,9 @@ img { width: 100%; max-width: 100%; object-fit: cover; }
 
 .section-start--menu li:hover { color: #fff; text-shadow: 0 -1px 1px #7ec845, 0 -1px 1px #7ec845, 0 1px 1px #7ec845, 0 1px 1px #7ec845, -1px 0 1px #7ec845, 1px 0 1px #7ec845, -1px 0 1px #7ec845, 1px 0 1px #7ec845, -1px -1px 1px #7ec845, 1px -1px 1px #7ec845, -1px 1px 1px #7ec845, 1px 1px 1px #7ec845, -1px -1px 1px #7ec845, 1px -1px 1px #7ec845, -1px 1px 1px #7ec845, 1px 1px 1px #7ec845; }
 
-.section-start--video { mix-blend-mode: darken; }
+.section-start--video { mix-blend-mode: darken; z-index: 0; }
 
-.section-start--video video { position: fixed; right: 0; top: 0; bottom: 0; height: 100%; width: 80%; object-fit: cover; transform: scale(1.2); }
+.section-start--video video { position: fixed; right: 0; top: 0; bottom: 0; height: 100%; z-index: 0; width: 80%; object-fit: cover; transform: scale(1.2); }
 
 .section-portfolio { width: 100%; z-index: 5; position: relative; }
 
@@ -550,6 +550,11 @@ img { width: 100%; max-width: 100%; object-fit: cover; }
 
 @keyframes loader_rotate { from { transform: rotate(0); }
   to { transform: rotate(360deg); } }
+
+@keyframes logo_letter_animation { 0% { transform: translateY(0); }
+  50% { transform: translateY(-5px); } }
+
+.logo_letter_animation { animation: logo_letter_animation 0.3s linear 0s forwards; }
 
 /*  Анимация для начального меню*/
 .js_animation-start { opacity: 0; animation: fade-in 0.2s linear 0s forwards; }

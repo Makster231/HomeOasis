@@ -68,6 +68,19 @@
   }
 }
 
+@keyframes logo_letter_animation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.logo_letter_animation {
+  animation: logo_letter_animation 0.3s linear 0s forwards;
+}
+
 /*  Анимация для начального меню*/
 .js_animation-start {
   opacity: 0;
