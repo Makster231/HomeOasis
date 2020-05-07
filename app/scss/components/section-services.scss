@@ -1,6 +1,8 @@
 .section-services {
   overflow: hidden;
   width: 100%;
+  position: relative;
+  z-index: 5;
 
   .owl-stage-outer {
     height: 100%;

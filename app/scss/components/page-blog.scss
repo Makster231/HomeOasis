@@ -1,5 +1,7 @@
 .page-blog {
   width: 100%;
+  position: relative;
+  z-index: 3;
 
   .owl-stage-outer {
     height: 100%;

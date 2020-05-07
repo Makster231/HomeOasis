@@ -34,13 +34,16 @@
 
   &--video {
     mix-blend-mode: darken;
+    // position: relative;
+    // z-index: 4;
+
     video {
       position: fixed;
       right: 0;
       top: 0;
       bottom: 0;
       height: 100%;
-      width: 90%;
+      width: 80%;
       object-fit: cover;
       transform: scale(1.2);
     }

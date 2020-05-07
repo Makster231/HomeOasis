@@ -3,6 +3,7 @@
   bottom: 15px;
   opacity: 0;
   animation: fade-in 0.2s linear 0s forwards;
+  z-index: 5;
 
   &-wrapper {
     display: flex;
@@ -25,6 +26,8 @@
           -1px -1px 1px $white, 1px -1px 1px $white, -1px 1px 1px $white,
           1px 1px 1px $white;
         transition: 0.3s ease;
+       
+        
 
         &:hover {
           color: $white;
@@ -42,6 +45,8 @@
       width: 370px;
       p {
         font-weight: bold;
+       
+        
         font-size: 24px;
         line-height: 31px;
         text-align: right;
@@ -75,6 +80,8 @@
         transition: 0.4s ease;
         cursor: pointer;
         margin-left: 30px;
+       
+        
 
         &:first-of-type {
           margin-left: 0;
@@ -105,6 +112,8 @@
         text-align: center;
         cursor: pointer;
         transition: 0.4s ease;
+       
+        
 
         &:hover {
           border-color: darken($blue, 15%);
@@ -131,6 +140,8 @@
         background-size: 100% 100%;
         background-repeat: no-repeat;
         background-position: center;
+       
+        
 
         &.arrow-left {
           background-image: url(../../images/icons/arrow-left.svg);

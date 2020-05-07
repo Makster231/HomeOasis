@@ -1,10 +1,16 @@
 .section-video {
   width: 100%;
+  z-index: 5;
+  position: relative;
   &--wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .section-video--block{
+    overflow: hidden;
   }
 
   .js-player {
@@ -27,6 +33,7 @@
       justify-content: space-between;
 
       .section-video--block {
+        
         max-width: calc(50% - 10px);
       }
     }
