@@ -2,7 +2,7 @@
   overflow: hidden;
   width: 100%;
   position: relative;
-  z-index: 5;
+  z-index: 3;
 
   .owl-stage-outer {
     height: 100%;
@@ -93,7 +93,6 @@
     max-width: 40%;
     width: 100%;
 
-
     h3 {
       font-weight: bold;
       font-size: 42px;
@@ -145,27 +144,10 @@
     }
 
     button {
-      width: 100%;
-      display: block;
       padding-top: 17px;
       padding-bottom: 17px;
-      font-weight: bold;
       font-size: 24px;
       line-height: 31px;
-      text-align: center;
-      color: $white;
-      background: $blue;
-      border: 0;
-      outline: 0;
-      box-sizing: border-box;
-      border-radius: 5px;
-      transition: 0.4s ease;
-      box-shadow: none;
-      cursor: pointer;
-
-      &:hover {
-        background-color: darken($blue, 15%);
-      }
     }
 
     p {
