@@ -164,7 +164,7 @@ img[data-object-fit="cover"] { object-fit: cover; }
 
 .header-wrapper--menu.js_active { display: flex; animation: fade-in 1s linear 0s forwards; }
 
-.header-wrapper--menu li { display: block; margin-left: 25px; font-weight: bold; font-size: 24px; line-height: 31px; color: #0F4C81; transition: 0.3s ease; cursor: pointer; }
+.header-wrapper--menu li { display: block; margin-left: 25px; font-weight: bold; font-size: 24px; line-height: 31px; color: #0F4C81; transition: 0.3s ease; cursor: pointer; text-shadow: 0 -1px 1px #fff, 0 -1px 1px #fff, 0 1px 1px #fff, 0 1px 1px #fff, -1px 0 1px #fff, 1px 0 1px #fff, -1px 0 1px #fff, 1px 0 1px #fff, -1px -1px 1px #fff, 1px -1px 1px #fff, -1px 1px 1px #fff, 1px 1px 1px #fff, -1px -1px 1px #fff, 1px -1px 1px #fff, -1px 1px 1px #fff, 1px 1px 1px #fff; }
 
 .header-wrapper--menu li:hover, .header-wrapper--menu li.js_active { color: #fff; text-shadow: 0 -1px 1px #7ec845, 0 -1px 1px #7ec845, 0 1px 1px #7ec845, 0 1px 1px #7ec845, -1px 0 1px #7ec845, 1px 0 1px #7ec845, -1px 0 1px #7ec845, 1px 0 1px #7ec845, -1px -1px 1px #7ec845, 1px -1px 1px #7ec845, -1px 1px 1px #7ec845, 1px 1px 1px #7ec845, -1px -1px 1px #7ec845, 1px -1px 1px #7ec845, -1px 1px 1px #7ec845, 1px 1px 1px #7ec845; }
 
@@ -440,7 +440,7 @@ img[data-object-fit="cover"] { object-fit: cover; }
 
 .page-blog--slider img { height: 100%; object-fit: cover; }
 
-.page-project { width: 100%; }
+.page-project { width: 100%; position: relative; z-index: 3; }
 
 .page-project .owl-stage-outer { height: 100%; }
 
