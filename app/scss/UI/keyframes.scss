@@ -70,181 +70,183 @@
 
 /*  Анимация для начального меню*/
 .js_animation-start {
+  opacity: 0;
+  animation: fade-in 0.2s linear 0s forwards;
   .js_animation-1 {
     opacity: 0;
-    animation: fade-in 0.2s linear 0.5s forwards;
+    animation: fade-in 0.2s linear 0.3s forwards;
   }
   .js_animation-2 {
     opacity: 0;
-    animation: fade-in 0.2s linear 0.7s forwards;
+    animation: fade-in 0.2s linear 0.5s forwards;
   }
   .js_animation-3 {
     opacity: 0;
-    animation: fade-in 0.2s linear 0.9s forwards;
+    animation: fade-in 0.2s linear 0.7s forwards;
   }
   .js_animation-4 {
     opacity: 0;
-    animation: fade-in 0.2s linear 1.1s forwards;
+    animation: fade-in 0.2s linear 0.9s forwards;
   }
   .js_animation-5 {
     opacity: 0;
-    animation: fade-in 0.2s linear 1.3s forwards;
+    animation: fade-in 0.2s linear 1.1s forwards;
   }
   .js_animation-6 {
     opacity: 0;
-    animation: fade-in 0.2s linear 1.5s forwards;
+    animation: fade-in 0.2s linear 1.3s forwards;
   }
   .js_animation-7 {
     opacity: 0;
-    animation: fade-in 0.2s linear 1.7s forwards;
+    animation: fade-in 0.2s linear 1.5s forwards;
   }
 }
 /*  Анимация для блока портфолио*/
 .js_animation-portfolio {
   opacity: 0;
-  animation: fade-in 0.1s linear 0s forwards;
+  animation: fade-in 0.2s linear 0s forwards;
 
   .js_animation-1 {
     opacity: 0;
-    animation: scale 0.2s linear 0.1s forwards;
+    animation: scale 0.2s linear 0.3s forwards;
   }
   .js_animation-2 {
     opacity: 0;
-    animation: scale 0.2s linear 0.3s forwards;
+    animation: scale 0.2s linear 0.5s forwards;
   }
   .js_animation-3 {
     opacity: 0;
-    animation: scale 0.2s linear 0.5s forwards;
+    animation: scale 0.2s linear 0.7s forwards;
   }
   .js_animation-4 {
     opacity: 0;
-    animation: scale 0.2s linear 0.7s forwards;
+    animation: scale 0.2s linear 0.9s forwards;
   }
   .js_animation-5 {
     opacity: 0;
-    animation: scale 0.2s linear 0.9s forwards;
+    animation: scale 0.2s linear 1.1s forwards;
   }
 }
 /*  Анимация для блока Видео*/
 .js_animation-video {
   opacity: 0;
-  animation: fade-in 0.1s linear 0s forwards;
+  animation: fade-in 0.2s linear 0s forwards;
   .js_animation-1 {
-    opacity: 0;
-    animation: fade-in 0.2s linear 0.1s forwards;
-  }
-  .js_animation-2 {
     opacity: 0;
     animation: fade-in 0.2s linear 0.3s forwards;
   }
-  .js_animation-3 {
+  .js_animation-2 {
     opacity: 0;
     animation: fade-in 0.2s linear 0.5s forwards;
   }
-  .js_animation-4 {
+  .js_animation-3 {
     opacity: 0;
     animation: fade-in 0.2s linear 0.7s forwards;
+  }
+  .js_animation-4 {
+    opacity: 0;
+    animation: fade-in 0.2s linear 0.9s forwards;
   }
 }
 /*  Анимация для блока Контакты*/
 
 .js_animation-contacts {
   opacity: 0;
-  animation: fade-in 0.1s linear 0s forwards;
+  animation: fade-in 0.2s linear 0s forwards;
   .js_animation-1 {
     opacity: 0;
-    animation: slide-left 0.3s linear 0.1s forwards;
+    animation: slide-left 0.2s linear 0.3s forwards;
   }
   .js_animation-2 {
     opacity: 0;
-    animation: slide-right 0.3s linear 0.4s forwards;
+    animation: slide-right 0.2s linear 0.5s forwards;
   }
 }
 /*  Анимация для блока Блог*/
 
 .js_animation-blog {
   opacity: 0;
-  animation: fade-in 0.1s linear 0s forwards;
+  animation: fade-in 0.2s linear 0s forwards;
   .js_animation-1 {
     opacity: 0;
-    animation: slide-up 0.3s linear 0.1s forwards;
+    animation: slide-up 0.2s linear 0.3s forwards;
   }
   .js_animation-2 {
     opacity: 0;
-    animation: slide-down 0.3s linear 0.4s forwards;
+    animation: slide-down 0.2s linear 0.5s forwards;
   }
   .js_animation-3 {
     opacity: 0;
-    animation: slide-up 0.3s linear 0.7s forwards;
+    animation: slide-up 0.2s linear 0.7s forwards;
   }
 }
 /*  Анимация для блока Команда*/
 
 .js_animation-team {
   opacity: 0;
-  animation: fade-in 0.1s linear 0s forwards;
+  animation: fade-in 0.2s linear 0s forwards;
   .js_animation-1 {
     opacity: 0;
-    animation: slide-up 0.3s linear 0.1s forwards;
+    animation: slide-up 0.2s linear 0.3s forwards;
   }
   .js_animation-2 {
     opacity: 0;
-    animation: slide-down 0.3s linear 0.4s forwards;
+    animation: slide-down 0.2s linear 0.5s forwards;
   }
   .js_animation-3 {
     opacity: 0;
-    animation: slide-up 0.3s linear 0.7s forwards;
+    animation: slide-up 0.2s linear 0.7s forwards;
   }
 }
 /*  Анимация для Страницы Блога*/
 .js_animation-blog--page {
   opacity: 0;
-  animation: fade-in 0.1s linear 0s forwards;
+  animation: fade-in 0.2s linear 0s forwards;
   .js_animation-1 {
     opacity: 0;
-    animation: slide-left 0.3s linear 0.1s forwards;
+    animation: slide-left 0.2s linear 0.3s forwards;
   }
   .js_animation-2 {
     opacity: 0;
-    animation: slide-left 0.3s linear 0.4s forwards;
+    animation: slide-left 0.2s linear 0.5s forwards;
   }
   .js_animation-3 {
     opacity: 0;
-    animation: slide-right 0.3s linear 0.7s forwards;
+    animation: slide-right 0.2s linear 0.7s forwards;
   }
 }
 /*  Анимация для Страницы Проекта*/
 .js_animation-project--page {
   opacity: 0;
-  animation: fade-in 0.1s linear 0s forwards;
+  animation: fade-in 0.2s linear 0s forwards;
   .js_animation-1 {
     opacity: 0;
-    animation: slide-left 0.3s linear 0.1s forwards;
+    animation: slide-left 0.2s linear 0.3s forwards;
   }
   .js_animation-2 {
     opacity: 0;
-    animation: slide-left 0.3s linear 0.4s forwards;
+    animation: slide-left 0.2s linear 0.5s forwards;
   }
   .js_animation-3 {
     opacity: 0;
-    animation: slide-left 0.3s linear 0.7s forwards;
+    animation: slide-left 0.2s linear 0.7s forwards;
   }
   .js_animation-4 {
     opacity: 0;
-    animation: slide-right 0.3s linear 1s forwards;
+    animation: slide-right 0.2s linear 0.9s forwards;
   }
 }
 /*  Анимация для блока Услуги*/
 .js_animation-services {
   opacity: 0;
-  animation: fade-in 0.1s linear 0s forwards;
+  animation: fade-in 0.2s linear 0s forwards;
   .js_animation-1 {
     opacity: 0;
-    animation: slide-left 0.3s linear 0.1s forwards;
+    animation: slide-left 0.3s linear 0.3s forwards;
   }
   .js_animation-2 {
     opacity: 0;
-    animation: slide-down 0.3s linear 0.1s forwards;
+    animation: slide-down 0.3s linear 0.3s forwards;
   }
 }
 
