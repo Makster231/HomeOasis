@@ -9,8 +9,9 @@
     align-items: center;
   }
 
-  .section-video--block{
+  .section-video--block {
     overflow: hidden;
+    width: 100%;
   }
 
   .js-player {
@@ -33,7 +34,6 @@
       justify-content: space-between;
 
       .section-video--block {
-        
         max-width: calc(50% - 10px);
       }
     }

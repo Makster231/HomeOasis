@@ -65,7 +65,7 @@ const js_plugins = [
 	path.app.jsComponents + 'navigation.js',
 	path.app.jsComponents + 'navigation-logo.js',
 	path.app.jsComponents + 'navigation-secondary-pages.js',
-
+	
 	path.app.jsComponents + 'form.js',
 
 	path.app.jsComponents + 'after-load.js',
