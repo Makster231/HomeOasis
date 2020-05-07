@@ -61,6 +61,8 @@ const js_plugins = [
 
 	path.app.jsComponents + 'navigation.js',
 
+	path.app.jsComponents + 'form.js',
+
 	path.app.jsComponents + 'after-load.js',
 	path.app.jsComponents + 'custom.js',
 ];

@@ -500,6 +500,9 @@ img[data-object-fit="cover"] { object-fit: cover; }
   to { transform: translateX(0);
     opacity: 1; } }
 
+@keyframes loader_rotate { from { transform: rotate(0); }
+  to { transform: rotate(360deg); } }
+
 /*  Анимация для начального меню*/
 .js_animation-start .js_animation-1 { opacity: 0; animation: fade-in 0.2s linear 0.5s forwards; }
 
@@ -518,7 +521,7 @@ img[data-object-fit="cover"] { object-fit: cover; }
 /*  Анимация для блока портфолио*/
 .js_animation-portfolio { opacity: 0; animation: fade-in 0.1s linear 0s forwards; }
 
-.js_animation-portfolio .js_animation-1 { opacity: 0; animation: scale 0.2s linear .1s forwards; }
+.js_animation-portfolio .js_animation-1 { opacity: 0; animation: scale 0.2s linear 0.1s forwards; }
 
 .js_animation-portfolio .js_animation-2 { opacity: 0; animation: scale 0.2s linear 0.3s forwards; }
 
@@ -531,7 +534,7 @@ img[data-object-fit="cover"] { object-fit: cover; }
 /*  Анимация для блока Видео*/
 .js_animation-video { opacity: 0; animation: fade-in 0.1s linear 0s forwards; }
 
-.js_animation-video .js_animation-1 { opacity: 0; animation: fade-in 0.2s linear .1s forwards; }
+.js_animation-video .js_animation-1 { opacity: 0; animation: fade-in 0.2s linear 0.1s forwards; }
 
 .js_animation-video .js_animation-2 { opacity: 0; animation: fade-in 0.2s linear 0.3s forwards; }
 
@@ -1128,11 +1131,27 @@ button.plyr__control--overlaid:hover { background-color: #7ec845; }
 
 .count-particles { border-radius: 0 0 3px 3px; }
 
-.btn { width: 100%; display: block; font-weight: bold; text-align: center; color: #fff; background: #0F4C81; border: 0; outline: 0; box-sizing: border-box; border-radius: 5px; transition: 0.4s ease; box-shadow: none; cursor: pointer; }
+.btn { position: relative; width: 100%; display: block; font-weight: bold; text-align: center; color: #fff; background: #0F4C81; border: 0; outline: 0; box-sizing: border-box; border-radius: 5px; transition: 0.4s ease; box-shadow: none; cursor: pointer; }
+
+.btn::after { content: none; position: absolute; width: 30px; height: 30px; left: calc(50% - 15px); top: calc(50% - 18px); border: 3px solid #fff; border-radius: 50%; border-color: transparent #fff transparent #fff; animation: loader_rotate 0.5s linear 0s infinite; z-index: 3; }
 
 .btn:hover { background-color: #07243c; }
 
 .btn:active { transition: 0s; background-color: #02090f; }
+
+.btn.js_loader { color: transparent; background-color: #02090f; }
+
+.btn.js_loader::after { content: ""; }
+
+label.error { font-weight: bold; position: absolute; font-size: 12px; bottom: -15px; left: 0; color: #ff3333; }
+
+label.error:last-child { margin-bottom: 0; }
+
+.form-control.error { border-color: #ff3333 !important; background-color: rgba(255, 0, 0, 0.05) !important; box-shadow: inset 0 0 0 1px #ff3333 !important; }
+
+.form-group:not(.has-error) label.error { display: none !important; }
+
+input.error:focus ~ label.error { display: none !important; }
 
 /* purgecss end ignore */
 
