@@ -1,5 +1,5 @@
 (function ($, window, document) {
-  function name(name) {
+  function FullName(name) {
     return /^(([a-zA-ZÀ-ÿ`']{0,}([.]{1})?[ |.\s|`|'|-][a-zA-ZÀ-ÿ]{1,}){1,})([.]?|[']?|[`]?)[ ]?$/.test(
       name
     );
@@ -36,19 +36,17 @@
       rules: {
         name: {
           required: true,
-          name: true,
         },
         phone: {
           required: true,
-          name: true,
         },
       },
 
       messages: {
-        name: {
+        FullName: {
           required: "Введите Ваше Имя",
         },
-        phone: {
+        Phone: {
           required: "Введите Валидный Телефон",
         },
       },
