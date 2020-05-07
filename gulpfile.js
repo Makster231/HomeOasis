@@ -51,10 +51,11 @@ const js_plugins = [
 
 	path.app.jsComponents + 'section-portfolio.js',
 	path.app.jsComponents + 'section-video.js',
-	path.app.jsComponents + 'section-services.js',
-	path.app.jsComponents + 'section-contacts.js',
-	path.app.jsComponents + 'section-blog.js',
+	path.app.jsComponents + 'section-awards.js',
 	path.app.jsComponents + 'section-team.js',
+	path.app.jsComponents + 'section-services.js',
+	path.app.jsComponents + 'section-blog.js',
+	path.app.jsComponents + 'section-contacts.js',
 
 	path.app.jsComponents + 'page-project.js',
 	path.app.jsComponents + 'page-blog.js',

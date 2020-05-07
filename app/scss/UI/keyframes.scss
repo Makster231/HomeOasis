@@ -247,3 +247,15 @@
     animation: slide-down 0.3s linear 0.1s forwards;
   }
 }
+
+/*  Анимация для блока наград*/
+.js_animation-awards {
+  .js_animation-1 {
+    opacity: 0;
+    animation: fade-in 0.5s linear 0s forwards;
+  }
+  .js_animation-2 {
+    opacity: 0;
+    animation: fade-in 0.5s linear 0s forwards;
+  }
+}

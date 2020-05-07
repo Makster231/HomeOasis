@@ -97,6 +97,31 @@
         line-height: 22px;
       }
     }
+    &--awards{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-end;
+      
+      P {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 31px;
+        color: $blue;
+        transition: 0.4s ease;
+        cursor: pointer;
+        margin-left: 30px;
+
+        &:first-of-type {
+          margin-left: 0;
+        }
+
+        &.js_active,
+        &:hover {
+          color: $green;
+        }
+      }
+    }
 
     &--navigation {
       flex-direction: row;
