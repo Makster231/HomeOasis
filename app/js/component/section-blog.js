@@ -5,8 +5,6 @@
       loop: true,
       dots: false,
       margin: 40,
-      autoplay: true,
-      autoplayTimeout: 10000,
       smartSpeed: 1000,
       nav: true,
       navText: [

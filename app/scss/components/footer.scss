@@ -102,6 +102,8 @@
       flex-direction: row;
       justify-content: center;
       align-items: flex-end;
+      opacity: 0;
+      animation: slide-right 0.3s linear 0s forwards;
       
       P {
         font-weight: bold;

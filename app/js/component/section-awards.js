@@ -4,8 +4,6 @@
       items: 4,
       loop: true,
       dots: false,
-      autoplay: true,
-      autoplayTimeout: 10000,
       smartSpeed: 1000,
       margin: 40,
       nav: true,
@@ -21,9 +19,7 @@
       items: 4,
       loop: true,
       dots: false,
-      autoplay: true,
       margin: 40,
-      autoplayTimeout: 10000,
       smartSpeed: 1000,
       nav: true,
       navText: [

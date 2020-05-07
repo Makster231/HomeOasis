@@ -60,9 +60,10 @@ const js_plugins = [
 	path.app.jsComponents + 'page-project.js',
 	path.app.jsComponents + 'page-blog.js',
 
-	path.app.jsComponents + 'navigation.js',
-	path.app.jsComponents + 'secondary-pages-navigation.js',
 	path.app.jsComponents + 'check-UTM.js',
+	path.app.jsComponents + 'secondary-pages-navigation.js',
+
+	path.app.jsComponents + 'navigation.js',
 
 	path.app.jsComponents + 'form.js',
 

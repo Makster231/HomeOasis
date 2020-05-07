@@ -4,8 +4,6 @@
       items: 1,
       loop: true,
       dots: false,
-      autoplay: true,
-      autoplayTimeout: 5000,
       smartSpeed: 1000,
       nav: true,
       navText: [

@@ -194,7 +194,7 @@ img[data-object-fit="cover"] { object-fit: cover; }
 
 .footer-wrapper--services button { margin-left: 130px; padding-top: 14px; padding-bottom: 14px; max-width: 250px; font-size: 18px; line-height: 22px; }
 
-.footer-wrapper--awards { display: flex; flex-direction: row; justify-content: center; align-items: flex-end; }
+.footer-wrapper--awards { display: flex; flex-direction: row; justify-content: center; align-items: flex-end; opacity: 0; animation: slide-right 0.3s linear 0s forwards; }
 
 .footer-wrapper--awards P { font-weight: bold; font-size: 24px; line-height: 31px; color: #0F4C81; transition: 0.4s ease; cursor: pointer; margin-left: 30px; }
 
