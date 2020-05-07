@@ -13,3 +13,10 @@ function SliderNavigation(isActive, slider) {
     $(".js_arrow-right").unbind("click");
   }
 }
+
+// Await function
+function delay(time) {
+  return new Promise(function (resolve) {
+    return setTimeout(resolve, time);
+  });
+}

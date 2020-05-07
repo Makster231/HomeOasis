@@ -50,7 +50,12 @@
         font-weight: bold;
         font-size: 24px;
         line-height: 31px;
-        color: #0f4c81;
+        color: $blue;
+        transition: 0.4s ease;
+
+        &:hover {
+          color: $green;
+        }
       }
     }
 

@@ -1,4 +1,9 @@
 .header {
+  opacity: 0;
+  animation: fade-in 0.2s linear 0s forwards;
+  position: relative;
+  z-index: 5;
+
   &-wrapper {
     display: flex;
     flex-direction: row;

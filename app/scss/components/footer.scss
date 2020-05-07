@@ -1,6 +1,9 @@
 .footer {
   position: fixed;
   bottom: 15px;
+  opacity: 0;
+  animation: fade-in 0.2s linear 0s forwards;
+
   &-wrapper {
     display: flex;
     flex-direction: row;
