@@ -40,7 +40,7 @@
     }
 
     &--description {
-      width: 370px;
+      width: 400px;
       p {
         font-weight: bold;
 
@@ -65,9 +65,13 @@
       justify-content: flex-end;
       align-items: flex-end;
       width: 100%;
-      max-width: 950px;
+      max-width: 1000px;
       margin-left: auto;
       margin-right: 30px;
+      
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+          opacity: 1;
+      }
 
       P {
         font-weight: bold;
@@ -105,6 +109,10 @@
       opacity: 0;
       animation: slide-right 0.3s linear 0s forwards;
       
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+          opacity: 1;
+      }
+      
       P {
         font-weight: bold;
         font-size: 24px;
@@ -129,6 +137,10 @@
       flex-direction: row;
       display: none;
       opacity: 0;
+      
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+          opacity: 1;
+      }
 
       &.js_active {
         display: flex;
