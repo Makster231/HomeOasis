@@ -5,12 +5,17 @@
 
   .owl-stage-outer {
     height: 100%;
+    overflow: hidden;
   }
 
   .owl-stage {
     height: 100%;
     display: flex;
     flex-direction: row;
+  }
+
+  .owl-nav{
+    display: none;
   }
 
   &--slider {
@@ -26,6 +31,7 @@
     flex-direction: row;
     align-items: center;
     width: auto;
+    overflow: hidden;
     .team-slide--media {
       width: 100%;
       max-width: 900px;
