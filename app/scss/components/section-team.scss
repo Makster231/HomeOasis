@@ -14,7 +14,7 @@
     flex-direction: row;
   }
 
-  .owl-nav{
+  .owl-nav {
     display: none;
   }
 
@@ -37,9 +37,17 @@
       max-width: 900px;
       height: 677px;
 
+      @media screen and (min-width: 1660px) and (min-height: 950px) {
+        max-width: 65%;
+        height: 100%;
+      }
+
       img {
         height: 100%;
         width: auto;
+        @media screen and (min-width: 1660px) and (min-height: 950px) {
+          width: 100%;
+        }
       }
     }
 
