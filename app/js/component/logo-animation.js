@@ -10,7 +10,7 @@
           i +
           ")"
       ).addClass("logo_letter_animation");
-      await delay(600);
+      await delay(900);
       $(
         ".js_logo .cls-1.js_logo-animation:eq(" +
           i +
@@ -18,6 +18,7 @@
           i +
           ")"
       ).removeClass("logo_letter_animation");
+      await delay(100);
 
       if ($logoLetters_length - 1 === i) {
         logoAnimation();

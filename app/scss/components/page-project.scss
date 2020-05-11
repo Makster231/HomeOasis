@@ -19,6 +19,8 @@
   }
 
   &--content {
+    max-height: 65vh;
+    overflow: hidden;
     h2 {
       font-size: 42px;
       font-weight: bold;
@@ -30,6 +32,14 @@
         1px 0 1px $white, -1px -1px 1px $white, 1px -1px 1px $white,
         -1px 1px 1px $white, 1px 1px 1px $white, -1px -1px 1px $white,
         1px -1px 1px $white, -1px 1px 1px $white, 1px 1px 1px $white;
+
+      border-right: 0.15em solid $blue;
+      opacity: 0;
+      animation: slide-left 0.2s linear 0.5s forwards,
+        typing 4.5s steps(24, end), blink-caret 0.5s step-end infinite !important;
+      overflow: hidden;
+      max-width: fit-content;
+      white-space: nowrap;
     }
 
     .page-project--details {

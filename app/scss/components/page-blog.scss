@@ -19,6 +19,17 @@
   }
 
   &--content {
+    max-height: 65vh;
+    overflow: hidden;
+    &::-webkit-scrollbar {
+      width: 3px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+      background-color: rgba(#bdbdbd, 1);
+    }
     h2 {
       font-size: 42px;
       font-weight: bold;
@@ -30,6 +41,12 @@
         1px 0 1px $white, -1px -1px 1px $white, 1px -1px 1px $white,
         -1px 1px 1px $white, 1px 1px 1px $white, -1px -1px 1px $white,
         1px -1px 1px $white, -1px 1px 1px $white, 1px 1px 1px $white;
+      border-right: 0.15em solid $blue;
+      opacity: 0;
+      animation: slide-left 0.2s linear 0.5s forwards,typing 4.5s steps(27, end), blink-caret 0.5s step-end infinite !important;
+      overflow: hidden;
+      max-width: fit-content;
+      white-space: nowrap;
     }
 
     .page-blog--text {

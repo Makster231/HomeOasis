@@ -1,3 +1,22 @@
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: $blue;
+  }
+}
+
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -73,12 +92,12 @@
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-5px);
+    transform: translateY(-3px);
   }
 }
 
 .logo_letter_animation {
-  animation: logo_letter_animation 0.5s linear 0s forwards;
+  animation: logo_letter_animation 0.8s linear forwards;
 }
 
 /*  Анимация для начального меню*/
@@ -118,19 +137,7 @@
 .js_animation-portfolio {
   opacity: 0;
   animation: fade-in 0.2s linear 0s forwards;
-  .js_animation-1 {
-    opacity: 0;
-    animation: slide-left 0.2s linear 0.3s forwards;
-  }
-  .js_animation-2 {
-    opacity: 0;
-    animation: slide-right 0.2s linear 0.3s forwards;
-  }
-}
-/*  Анимация для блока Видео*/
-.js_animation-video {
-  opacity: 0;
-  animation: fade-in 0.2s linear 0s forwards;
+
   .js_animation-1 {
     opacity: 0;
     animation: slide-up 0.2s linear 0.3s forwards;
@@ -138,6 +145,20 @@
   .js_animation-2 {
     opacity: 0;
     animation: slide-down 0.2s linear 0.3s forwards;
+  }
+}
+
+/*  Анимация для блока Видео*/
+.js_animation-video {
+  opacity: 0;
+  animation: fade-in 0.2s linear 0s forwards;
+  .js_animation-1 {
+    opacity: 0;
+    animation: slide-left 0.2s linear 0.3s forwards;
+  }
+  .js_animation-2 {
+    opacity: 0;
+    animation: slide-right 0.2s linear 0.3s forwards;
   }
 }
 /*  Анимация для блока Контакты*/
@@ -197,10 +218,6 @@
   .js_animation-1 {
     opacity: 0;
     animation: slide-left 0.2s linear 0.3s forwards;
-  }
-  .js_animation-2 {
-    opacity: 0;
-    animation: slide-left 0.2s linear 0.5s forwards;
   }
   .js_animation-3 {
     opacity: 0;

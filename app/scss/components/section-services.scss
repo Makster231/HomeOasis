@@ -23,6 +23,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    height: 60vh;
+    overflow: hidden;
   }
 
   &--slider {
@@ -128,7 +130,8 @@
     }
 
     input {
-      display: block;
+  font-family: "FuturaPT", sans-serif !important;
+  display: block;
       width: 100%;
       background: $white;
       border: 3px solid #eaeaea;
@@ -150,7 +153,8 @@
     }
 
     button {
-      padding-top: 17px;
+  font-family: "FuturaPT", sans-serif !important;
+  padding-top: 17px;
       padding-bottom: 17px;
       font-size: 24px;
       line-height: 31px;
