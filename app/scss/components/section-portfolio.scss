@@ -14,7 +14,7 @@
     flex-direction: row;
   }
 
-  .owl-nav{
+  .owl-nav {
     display: none;
   }
 
@@ -25,8 +25,17 @@
     overflow: hidden;
   }
   &--slide {
-    margin-left: 10px;
-    width: calc(100% - 20px);
+    width: calc(100% - 10px);
+  }
+
+  .active {
+    &:nth-last-of-type(odd) {
+      margin-left: 10px;
+    }
+
+    &:nth-last-of-type(even) {
+      margin-left: 10px;
+    }
   }
 
   .section-slide--block {

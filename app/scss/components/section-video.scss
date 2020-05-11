@@ -1,5 +1,6 @@
 .section-video {
   width: 100%;
+  overflow: hidden;
   z-index: 5;
   position: relative;
   &--wrapper {
@@ -7,6 +8,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    max-width: 100%;
   }
 
   .section-video--block {

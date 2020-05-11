@@ -4,10 +4,10 @@
   
   <style>
 	.stop--1 {
-	    animation: colors-1 4s infinite;
+	    animation: colors-1 0.1s infinite;
 	}
 	.stop--2 {
-	    animation: colors-2 4s 4s infinite;
+	    animation: colors-2 0.1s 0.1s infinite;
 	}
 
 	@keyframes colors-1 {
@@ -29,7 +29,7 @@
 </style>
   
 <defs>
-<linearGradient id="paint0_linear" x1="167.132" x2="772.99" y1="410.835" y2="-195.023" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint_linear" x1="167.132" x2="772.99" y1="410.835" y2="-195.023" gradientUnits="userSpaceOnUse">
 <stop class="stop--1" offset="0" stop-color="#7EC845"/>
 <stop class="stop--2" offset="1" stop-color="#0F4C81"/>
 </linearGradient>

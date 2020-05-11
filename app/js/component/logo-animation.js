@@ -2,7 +2,7 @@
   async function logoAnimation() {
     let $logoLetters_length = $(".js_logo .js_logo-animation").length / 2;
 
-    for (let i = 0; i < $logoLetters_length ; i++) {
+    for (let i = 0; i < $logoLetters_length; i++) {
       $(
         ".js_logo .cls-1.js_logo-animation:eq(" +
           i +
@@ -10,7 +10,7 @@
           i +
           ")"
       ).addClass("logo_letter_animation");
-      await delay(400);
+      await delay(600);
       $(
         ".js_logo .cls-1.js_logo-animation:eq(" +
           i +

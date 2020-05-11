@@ -54,7 +54,7 @@
       $(".js_section-services--block, .js_header, .js_footer").addClass("js_hidden");
       // Показываем анимационный текст
       $(".js_section-services--animation").removeClass("js_hidden");
-      await delay(6000);
+      await delay(2500);
       // Скрываем анимационный текст, навигационный блок в футере , стрелки для слайдера в футере
       $(".js_section-services--animation, .js_footer-services, .js_footer-navigation").addClass("js_hidden");
       // показываем форму услуг , хедер , футер, блок описания в футере 
