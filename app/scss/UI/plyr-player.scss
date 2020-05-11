@@ -485,7 +485,7 @@ a.plyr__control::before {
 }
 
 .plyr--video.plyr--hide-controls .plyr__controls {
-  opacity: 0;
+  opacity: 0 !important;
   pointer-events: none;
   -webkit-transform: translateY(100%);
   -moz-transform: translateY(100%);
@@ -2080,16 +2080,5 @@ button.plyr__control--overlaid:hover {
 }
 
 .plyr--paused .plyr__controls {
-  opacity: 0;
-}
-
-#formModal {
-  position: absolute;
-  z-index: 9999;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.75);
-  text-align: center;
+  opacity: 0 !important;
 }
