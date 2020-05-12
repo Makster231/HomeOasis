@@ -384,6 +384,10 @@ img { width: 100%; max-width: 100%; object-fit: cover; }
 
 .section-services--content p, .section-services--content li { font-weight: 300; font-size: 24px; line-height: 29px; color: #363838; }
 
+.section-services--content p a, .section-services--content li a { color: #0F4C81; font-weight: bold; transition: 0.5s ease; }
+
+.section-services--content p a:hover, .section-services--content li a:hover { color: #fff; text-shadow: 0 -1px 1px #7ec845, 0 -1px 1px #7ec845, 0 1px 1px #7ec845, 0 1px 1px #7ec845, -1px 0 1px #7ec845, 1px 0 1px #7ec845, -1px 0 1px #7ec845, 1px 0 1px #7ec845, -1px -1px 1px #7ec845, 1px -1px 1px #7ec845, -1px 1px 1px #7ec845, 1px 1px 1px #7ec845, -1px -1px 1px #7ec845, 1px -1px 1px #7ec845, -1px 1px 1px #7ec845, 1px 1px 1px #7ec845; }
+
 .section-services .section-services--animation { width: 100%; text-align: center; opacity: 0; animation: fade-in 0.2s linear 0s forwards; }
 
 .section-services .section-services--form { display: flex; flex-direction: row; justify-content: space-between; align-items: center; max-width: 40%; width: 100%; }
@@ -1236,6 +1240,32 @@ label.error:last-child { margin-bottom: 0; }
 .form-group:not(.has-error) label.error { display: none !important; }
 
 input.error:focus ~ label.error { display: none !important; }
+
+.services_modal { display: block; max-width: 850px; border-radius: 15px; background-color: rgba(0, 0, 0, 0.8); border: 3px solid #1467af; }
+
+.services_modal .fancybox-button { color: #1467af; transition: 0.5s ease; padding: 0; width: 32px; height: 32px; }
+
+.services_modal .fancybox-button svg { transition: 0.5s ease; }
+
+.services_modal .fancybox-button svg:hover { transform: rotate(90deg); }
+
+.services_modal h2 { font-size: 32px; color: #fff; margin-bottom: 20px; width: 100%; text-align: center; font-weight: bold; }
+
+.services_modal h3 { font-size: 26px; color: #fff; margin-bottom: 15px; width: 100%; text-align: center; font-weight: bold; }
+
+.services_modal ul { display: block; margin-bottom: 10px; }
+
+.services_modal li { padding-left: 20px; position: relative; display: block; }
+
+.services_modal li::before { content: ""; position: absolute; left: 0; top: 9px; width: 8px; height: 8px; border-radius: 50%; background-color: #0F4C81; }
+
+.services_modal img { float: right; margin-left: 15px; max-width: 400px; }
+
+.services_modal img:nth-of-type(even) { margin-right: 15px; float: left; }
+
+.services_modal li, .services_modal p { font-size: 18px; line-height: 1.4; margin-bottom: 10px; color: #fff; }
+
+.services_modal li:last-of-type, .services_modal p:last-of-type { margin-bottom: 0; }
 
 /* purgecss end ignore */
 

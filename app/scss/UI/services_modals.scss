@@ -1,0 +1,83 @@
+.services_modal {
+  display: block;
+  max-width: 850px;
+  border-radius: 15px;
+  background-color: rgba($black, 0.8);
+  border: 3px solid lighten($blue, 10%);
+  .fancybox-button {
+    color: lighten($blue, 10%);
+    transition: 0.5s ease;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+
+    svg {
+      transition: 0.5s ease;
+      &:hover {
+        transform: rotate(90deg);
+      }
+    }
+  }
+  h2 {
+    font-size: 32px;
+    color: $white;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+  }
+  h3 {
+    font-size: 26px;
+    color: $white;
+    margin-bottom: 15px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  ul {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  li {
+    padding-left: 20px;
+    position: relative;
+    display: block;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: $blue;
+    }
+  }
+
+  img {
+    float: right;
+    margin-left: 15px;
+    max-width: 400px;
+
+    &:nth-of-type(even) {
+      margin-right: 15px;
+      float: left;
+    }
+  }
+
+  li,
+  p {
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+
+    color: $white;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}

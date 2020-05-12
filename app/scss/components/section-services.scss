@@ -83,6 +83,22 @@
       font-size: 24px;
       line-height: 29px;
       color: #363838;
+
+      a {
+        color: $blue;
+        font-weight: bold;
+        transition: 0.5s ease;
+
+        &:hover {
+          color: $white;
+          text-shadow: 0 -1px 1px $green, 0 -1px 1px $green, 0 1px 1px $green,
+            0 1px 1px $green, -1px 0 1px $green, 1px 0 1px $green,
+            -1px 0 1px $green, 1px 0 1px $green, -1px -1px 1px $green,
+            1px -1px 1px $green, -1px 1px 1px $green, 1px 1px 1px $green,
+            -1px -1px 1px $green, 1px -1px 1px $green, -1px 1px 1px $green,
+            1px 1px 1px $green;
+        }
+      }
     }
   }
 
@@ -130,8 +146,8 @@
     }
 
     input {
-  font-family: "FuturaPT", sans-serif !important;
-  display: block;
+      font-family: "FuturaPT", sans-serif !important;
+      display: block;
       width: 100%;
       background: $white;
       border: 3px solid #eaeaea;
@@ -153,8 +169,8 @@
     }
 
     button {
-  font-family: "FuturaPT", sans-serif !important;
-  padding-top: 17px;
+      font-family: "FuturaPT", sans-serif !important;
+      padding-top: 17px;
       padding-bottom: 17px;
       font-size: 24px;
       line-height: 31px;
