@@ -1026,17 +1026,17 @@ a.plyr__control::after, a.plyr__control::before { display: none; }
 
 .plyr:-moz-full-screen { background: #000; -moz-border-radius: 0 !important; border-radius: 0 !important; height: 100%; margin: 0; width: 100%; }
 
-.plyr:-ms-fullscreen { background: #000; border-radius: 0 !important; height: 100%; margin: 0; width: 100%; }
+.plyr:-ms-fullscreen { background: #000; border-radius: 0 !important; height: 100% !important; margin: 0; width: 100% !important; }
 
-.plyr:fullscreen { background: #000; -webkit-border-radius: 0 !important; -moz-border-radius: 0 !important; border-radius: 0 !important; height: 100%; margin: 0; width: 100%; }
+.plyr:fullscreen { background: #000; -webkit-border-radius: 0 !important; -moz-border-radius: 0 !important; border-radius: 0 !important; height: 100% !important; margin: 0; width: 100% !important; }
 
-.plyr:-webkit-full-screen video { height: 100%; }
+.plyr:-webkit-full-screen video { height: 100% !important; }
 
-.plyr:-moz-full-screen video { height: 100%; }
+.plyr:-moz-full-screen video { height: 100% !important; }
 
-.plyr:-ms-fullscreen video { height: 100%; }
+.plyr:-ms-fullscreen video { height: 100% !important; }
 
-.plyr:fullscreen video { height: 100%; }
+.plyr:fullscreen video { height: 100% !important; }
 
 .plyr:-webkit-full-screen .plyr__video-wrapper { height: 100%; width: 100%; }
 

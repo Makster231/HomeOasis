@@ -1,7 +1,5 @@
 (function ($, window, document) {
   function checkIsItprojectPage() {
-    // Меняем цвет фона на белый
-    $("body").addClass("js_bg-color--white");
     // Показываем вВерхнее меню
     $(".js_header-menu").addClass("js_active");
     // Убираем js_active со всех пунктов меню

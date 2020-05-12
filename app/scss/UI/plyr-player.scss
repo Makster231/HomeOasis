@@ -1479,9 +1479,9 @@ a.plyr__control::before {
 .plyr:-ms-fullscreen {
   background: #000;
   border-radius: 0 !important;
-  height: 100%;
+  height: 100% !important;
   margin: 0;
-  width: 100%;
+  width: 100% !important;
 }
 
 .plyr:fullscreen {
@@ -1489,25 +1489,25 @@ a.plyr__control::before {
   -webkit-border-radius: 0 !important;
   -moz-border-radius: 0 !important;
   border-radius: 0 !important;
-  height: 100%;
+  height: 100% !important;
   margin: 0;
-  width: 100%;
+  width: 100% !important;
 }
 
 .plyr:-webkit-full-screen video {
-  height: 100%;
+  height: 100% !important;
 }
 
 .plyr:-moz-full-screen video {
-  height: 100%;
+  height: 100% !important;
 }
 
 .plyr:-ms-fullscreen video {
-  height: 100%;
+  height: 100% !important;
 }
 
 .plyr:fullscreen video {
-  height: 100%;
+  height: 100% !important;
 }
 
 .plyr:-webkit-full-screen .plyr__video-wrapper {
@@ -2076,6 +2076,7 @@ button.plyr__control--overlaid svg use {
 }
 
 button.plyr__control--overlaid:hover {
+  
   background-color: $green;
 }
 

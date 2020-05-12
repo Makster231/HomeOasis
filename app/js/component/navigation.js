@@ -2,8 +2,6 @@
   function navigation() {
     $(".js_nav-item").click(function () {
       let $this = $(this);
-      // Меняем цвет фона на белый
-      $("body").removeClass("js_bg-color--white");
       // Показываем вВерхнее меню
       $(".js_header-menu").addClass("js_active");
       // Скрываем текущий экран / навигацию пункта Услуг / навигацию пункта наград 
@@ -98,8 +96,6 @@
       if ($this.is(".js_nav-contacts")) {
       // bind arrows for contacts slider 
         SliderNavigation(true, ".js_contacts-slider");
-        // Меняем цвет фона на белый
-        $("body").addClass("js_bg-color--white");
         // Показываем блок Контактов / удаляем класс скрывающий навигацию в футере
         $(".js_section-contacts, .js_footer-navigation").removeClass("js_hidden");
         // Показываем стрелки, добавляем класс пункту меню
