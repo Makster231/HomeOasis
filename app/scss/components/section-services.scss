@@ -63,13 +63,9 @@
     position: relative;
     max-width: calc(35% - 15px);
     padding-right: 30px;
-    overflow-y: auto;
-    max-height: 600px;
     box-sizing: border-box;
-
-    @media screen and (max-width: 1660px) and (max-height: 768px) {
-      max-height: 450px;
-    }
+    overflow-y: scroll;
+    max-height: 60vh;
 
     &::-webkit-scrollbar {
       width: 3px;

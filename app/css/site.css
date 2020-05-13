@@ -384,13 +384,13 @@ img { width: 100%; max-width: 100%; object-fit: cover; }
 
 @media screen and (max-width: 1660px) and (max-height: 768px) { .section-services--slider .services-slide--img { height: 450px; } }
 
-.section-services--content { width: 100%; position: relative; max-width: calc(35% - 15px); padding-right: 30px; overflow-y: auto; max-height: 600px; box-sizing: border-box; }
-
-@media screen and (max-width: 1660px) and (max-height: 768px) { .section-services--content { max-height: 450px; } }
+.section-services--content { width: 100%; position: relative; max-width: calc(35% - 15px); padding-right: 30px; box-sizing: border-box; overflow-y: scroll; max-height: 60vh; }
 
 .section-services--content::-webkit-scrollbar { width: 3px; }
 
 .section-services--content::-webkit-scrollbar-thumb { -webkit-border-radius: 10px; border-radius: 10px; background-color: #bdbdbd; }
+
+.section-services--content p { margin-bottom: 10px; }
 
 .section-services--content li { position: relative; padding-left: 20px; }
 
