@@ -28,7 +28,7 @@
       border-radius: 10px;
       background-color: rgba(#bdbdbd, 1);
     }
-    
+
     h2 {
       font-size: 42px;
       font-weight: bold;
@@ -102,7 +102,7 @@
         to right,
         rgba(255, 255, 255, 0) 0%,
         rgba(255, 255, 255, 0.5) 50%,
-        rgba(#f7fff5, 1) 100%
+        rgba($white-green, 1) 100%
       );
     }
 
