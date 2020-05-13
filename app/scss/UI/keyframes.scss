@@ -190,15 +190,23 @@
   animation: fade-in 0.2s linear 0s forwards;
   .js_animation-1 {
     opacity: 0;
-    animation: slide-up 0.2s linear 0.3s forwards;
+    animation: slide-left 0.3s linear 1.5s forwards;
   }
   .js_animation-2 {
     opacity: 0;
-    animation: slide-down 0.2s linear 0.5s forwards;
+    animation: slide-up 0.3s linear 0.9s forwards;
   }
   .js_animation-3 {
     opacity: 0;
-    animation: slide-up 0.2s linear 0.7s forwards;
+    animation: slide-up 0.3s linear 0.3s forwards;
+  }
+  .js_animation-4 {
+    opacity: 0;
+    animation: slide-down 0.3s linear 0.6s forwards;
+  }
+  .js_animation-5 {
+    opacity: 0;
+    animation: slide-right 0.3s linear 1.2s forwards;
   }
 }
 /*  Анимация для Страницы Блога*/
