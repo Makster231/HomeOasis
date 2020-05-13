@@ -115,6 +115,7 @@
       font-size: 24px;
       line-height: 29px;
       color: #363838;
+      line-height: 1.4;
 
       a {
         color: $blue;
@@ -125,7 +126,7 @@
         box-sizing: border-box;
 
         &::before {
-          transition: 0.5s ease;
+          transition: 0.3s ease;
           content: "";
           position: absolute;
           width: 100%;

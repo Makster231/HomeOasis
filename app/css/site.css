@@ -236,6 +236,8 @@ img { width: 100%; max-width: 100%; object-fit: cover; }
 
 .section-start--video video { width: 100%; height: 100%; }
 
+.section-start--video::after { content: ""; position: absolute; right: -2px; bottom: 0; top: 0; z-index: 5; height: 100%; width: 100%; transform: matrix(1, 0, 0, 1, 0, 0); background: rgba(255, 255, 255, 0); background: linear-gradient(to right, #f7fff5 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%); }
+
 .section-portfolio { width: 100%; z-index: 5; position: relative; }
 
 .section-portfolio .owl-stage-outer { overflow: hidden; height: 100%; }
@@ -398,11 +400,11 @@ img { width: 100%; max-width: 100%; object-fit: cover; }
 
 .section-services--content li li::before { left: 20px; width: 6px; height: 6px; top: 15px; }
 
-.section-services--content p, .section-services--content li { font-weight: 300; font-size: 24px; line-height: 29px; color: #363838; }
+.section-services--content p, .section-services--content li { font-weight: 300; font-size: 24px; line-height: 29px; color: #363838; line-height: 1.4; }
 
 .section-services--content p a, .section-services--content li a { color: #0F4C81; display: block; position: relative; max-width: fit-content; box-sizing: border-box; }
 
-.section-services--content p a::before, .section-services--content li a::before { transition: 0.5s ease; content: ""; position: absolute; width: 100%; height: 2px; bottom: 0; left: -300%; background-color: #0F4C81; }
+.section-services--content p a::before, .section-services--content li a::before { transition: 0.3s ease; content: ""; position: absolute; width: 100%; height: 2px; bottom: 0; left: -300%; background-color: #0F4C81; }
 
 .section-services--content p a:hover, .section-services--content li a:hover { color: #7ec845; }
 
@@ -1278,7 +1280,7 @@ input.error:focus ~ label.error { display: none !important; }
 
 .services_modal li li::before { left: 20px; top: 11px; width: 6px; height: 6px; }
 
-.services_modal img { float: right; margin-left: 15px; max-width: 400px; }
+.services_modal img { float: right; margin-left: 15px; max-width: 400px; max-height: 200px; }
 
 .services_modal img:nth-of-type(even) { margin-right: 15px; float: left; }
 
