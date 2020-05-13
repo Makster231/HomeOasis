@@ -4,8 +4,13 @@
   border-radius: 15px;
   background-color: #f7fff5;
   border: 3px solid lighten($green, 10%);
+  overflow-x: hidden !important;
+  strong {
+    font-weight: bold;
+  }
+
   .fancybox-button {
-    color: lighten($green, 10%);
+    color: $blue;
     transition: 0.5s ease;
     padding: 0;
     width: 32px;
@@ -37,7 +42,7 @@
 
   ul {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 
   li {
@@ -54,6 +59,17 @@
       height: 8px;
       border-radius: 50%;
       background-color: $green;
+    }
+
+    li {
+      padding-left: 40px;
+
+      &::before {
+        left: 20px;
+        top: 11px;
+        width: 6px;
+        height: 6px;
+      }
     }
   }
 

@@ -4,6 +4,10 @@
   position: relative;
   z-index: 3;
 
+  strong {
+    font-weight: bold;
+  }
+
   .owl-stage-outer {
     height: 100%;
     overflow: hidden;
@@ -77,6 +81,34 @@
       background-color: rgba(#bdbdbd, 1);
     }
 
+    li {
+      position: relative;
+      padding-left: 20px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 13px;
+        color: #7ec845;
+        width: 8px;
+        height: 8px;
+        background-color: $green;
+        border-radius: 50%;
+      }
+
+      li {
+        padding-left: 40px;
+
+        &::before {
+          left: 20px;
+          width: 6px;
+          height: 6px;
+          top: 15px;
+        }
+      }
+    }
+
     p,
     li {
       font-weight: 300;
@@ -86,17 +118,29 @@
 
       a {
         color: $blue;
-        font-weight: bold;
-        transition: 0.5s ease;
+        display: block;
+        position: relative;
+        // font-weight: bold;
+        max-width: fit-content;
+        box-sizing: border-box;
+
+        &::before {
+          transition: 0.5s ease;
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          bottom: 0;
+          left: -300%;
+          background-color: $blue;
+        }
 
         &:hover {
-          color: $white;
-          text-shadow: 0 -1px 1px $green, 0 -1px 1px $green, 0 1px 1px $green,
-            0 1px 1px $green, -1px 0 1px $green, 1px 0 1px $green,
-            -1px 0 1px $green, 1px 0 1px $green, -1px -1px 1px $green,
-            1px -1px 1px $green, -1px 1px 1px $green, 1px 1px 1px $green,
-            -1px -1px 1px $green, 1px -1px 1px $green, -1px 1px 1px $green,
-            1px 1px 1px $green;
+          color: $green;
+          &::before {
+            background-color: $green;
+            left: 0;
+          }
         }
       }
     }

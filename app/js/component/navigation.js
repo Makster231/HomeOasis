@@ -9,7 +9,7 @@
       // Убираем js_active со всех пунктов меню
       $(".js_nav-item").removeClass("js_active");
       // Убираем метки слайдров со стрелок
-      $(".js_footer-navigation").removeClass("js_navigation-portfolio  js_navigation-team js_navigation-services js_navigation-blog js_navigation-contacts js_navigation-awards");
+      $(".js_footer-navigation").removeClass("js_navigation-portfolio  js_navigation-services js_navigation-blog js_navigation-contacts js_navigation-awards");
       // Unbind arrows for contacts slider 
       SliderNavigation(false);
 
@@ -51,16 +51,12 @@
       }
 
       if ($this.is(".js_nav-team")) {
-        // bind arrows for team slider 
-        SliderNavigation(true, ".js_team-slider");
-        // Показываем блок Блог / удаляем класс скрывающий навигацию в футере
-        $(".js_section-team, .js_footer-navigation").removeClass("js_hidden");
-        // Показываем стрелки, добавляем класс пункту меню
-        $(".js_footer-navigation, .js_nav-team").addClass("js_active");
-        // убираем текст в футере
-        $(".js_footer-description").addClass("js_hidden");
-        // добавляем стрелкам метку для слайдера
-        $(".js_footer-navigation").addClass("js_navigation-team");
+        // Показываем блок team и показыаем текст в футере
+        $(".js_section-team, .js_footer-description").removeClass("js_hidden");
+        // добавляем класс пункту меню
+        $(".js_nav-team").addClass("js_active");
+        // Убираем стрелкам в футере 
+        $(".js_footer-navigation").removeClass("js_active");
       }
 
 
