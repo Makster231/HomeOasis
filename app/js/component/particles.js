@@ -4,7 +4,7 @@
     let counter = 220;
 
     if ($(window).width() < 1660) {
-      counter = 150
+      counter = 120
     }
     /* ---- particles.js config ---- */
 

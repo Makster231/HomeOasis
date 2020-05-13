@@ -20,7 +20,7 @@
       loop: true,
       dots: false,
       margin: 40,
-      smartSpeed: 1000,
+      smartSpeed: 1500,
       nav: true,
       navText: [
         "<span class='icon-owl icon-prev'></span>",

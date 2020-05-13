@@ -4,10 +4,6 @@
   max-width: calc(100% - 40px);
   margin-left: auto;
   margin-right: auto;
-
-  @media (min-width: 1920px){
-    max-width: 1660px;
-  }
 }
 
 .js_hidden {
