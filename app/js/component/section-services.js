@@ -5,6 +5,7 @@
       loop: true,
       dots: false,
       smartSpeed: 1000,
+      lazyLoad:true,
       nav: true,
       navText: [
         "<span class='icon-owl icon-prev'></span>",
@@ -18,6 +19,7 @@
       items: 1,
       loop: true,
       dots: false,
+      lazyLoad:true,
       smartSpeed: 1000,
       nav: true,
       navText: [
