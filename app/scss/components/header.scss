@@ -22,17 +22,14 @@
     }
 
     &--menu {
-      display: none;
+      display: flex;
       flex-direction: row;
       align-items: center;
       opacity: 0;
       position: relative;
       z-index: 10;
+      animation: fade-in 1s linear 0s forwards;
 
-      &.js_active {
-        display: flex;
-        animation: fade-in 1s linear 0s forwards;
-      }
       li {
         display: block;
         margin-left: 25px;
