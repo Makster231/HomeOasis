@@ -2,9 +2,10 @@
   function awardsthanksSlider() {
     $(".js_awards-thanks--slider").owlCarousel({
       items: 4,
-      loop: true,
+      // loop: true,
       dots: false,
       smartSpeed: 1000,
+      lazyLoad:true,
       margin: 40,
       nav: true,
       navText: [
@@ -17,10 +18,11 @@
   function awardsdiplomaSlider() {
     $(".js_awards-diploma--slider").owlCarousel({
       items: 4,
-      loop: true,
+      // loop: true,
       dots: false,
       margin: 40,
       smartSpeed: 1500,
+      lazyLoad:true,
       nav: true,
       navText: [
         "<span class='icon-owl icon-prev'></span>",
