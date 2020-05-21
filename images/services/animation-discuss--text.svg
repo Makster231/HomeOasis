@@ -12,26 +12,26 @@
 
 	@keyframes colors-1 {
 	    30% {
-	        stop-color: #7EC845;
+	        stop-color: #00a03e;
 	    }
 	    60% {
-	        stop-color: #0F4C81;
+	        stop-color: #0087cb;
 	    }
 	}
 	@keyframes colors-2 {
 	    30% {
-	        stop-color: #0F4C81;
+	        stop-color: #0087cb;
 	    }
 	    60% {
-	        stop-color: #7EC845;
+	        stop-color: #00a03e;
 	    }
 	}
 </style>
   
 <defs>
 <linearGradient id="paint_linear" x1="167.132" x2="772.99" y1="410.835" y2="-195.023" gradientUnits="userSpaceOnUse">
-<stop class="stop--1" offset="0" stop-color="#7EC845"/>
-<stop class="stop--2" offset="1" stop-color="#0F4C81"/>
+<stop class="stop--1" offset="0" stop-color="#00a03e"/>
+<stop class="stop--2" offset="1" stop-color="#0087cb"/>
 </linearGradient>
 </defs>
 </svg>

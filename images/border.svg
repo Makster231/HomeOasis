@@ -1,0 +1,17 @@
+<svg width="556" height="172" viewBox="0 0 556 172"  preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+
+<linearGradient id="id_1" x1="20%" y1="0%" x2="20%" y2="100%" > 
+            
+            <stop offset="0%" stop-color="#0087cb ">
+                <animate attributeName="stop-color" values="#00a03e; #0087cb; #00a03e" dur="3s" repeatCount="indefinite"></animate>
+            </stop>
+
+            <stop offset="100%" stop-color="#00a03e">
+                <animate attributeName="stop-color" values="#0087cb; #00a03e; #0087cb" dur="3s" repeatCount="indefinite"></animate>
+            </stop>
+
+        </linearGradient>
+ </defs>
+<rect fill="transparent" x="2" y="2" width="552" height="168" stroke="url(#id_1)" stroke-width="4"/>
+</svg>

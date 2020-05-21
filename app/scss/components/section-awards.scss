@@ -11,14 +11,14 @@
     &-stage {
       height: 100%;
       display: flex;
-      flex-direction: row;
+      flex-direction: row-reverse;
     }
 
     &-item {
       &:last-of-type {
         a {
           &::after {
-            left: -20px;
+            right: -20px;
             width: calc(50% + 20px);
           }
         }
@@ -27,6 +27,10 @@
         a {
           &::after {
             right: -20px;
+            width: calc(50% + 20px);
+          }
+          &::after {
+            left: -20px;
             width: calc(50% + 20px);
           }
         }
@@ -74,6 +78,33 @@
       height: 3px;
       background-color: $green;
       width: calc(100% + 80px);
+    }
+
+    picture {
+      &.slide-img--border {
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          background: url(../../images/border.svg) center no-repeat;
+          background-size: 100% 460px;
+          z-index: 11;
+          height: 450px;
+          width: 100%;
+          max-width: 320px;
+        }
+
+        @media screen and (max-width: 1660px) and (max-height: 768px) {
+          &::after {
+            height: 400px;
+            background-size: 100% 410px;
+          }
+        }
+      }
     }
 
     img {

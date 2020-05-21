@@ -17,7 +17,7 @@
           },
         },
         color: {
-          value: "#7ec845",
+          value: "#00a03e",
         },
         shape: {
           type: "circle",

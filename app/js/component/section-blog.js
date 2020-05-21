@@ -2,7 +2,7 @@
   function blogSlider() {
     $(".js_blog-slider").owlCarousel({
       items: 3,
-      loop: true,
+      // loop: true,
       dots: false,
       margin: 40,
       smartSpeed: 1000,
